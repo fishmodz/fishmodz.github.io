@@ -19,10 +19,6 @@
         .bg-custom-nav {
             background-color: #1a1a1a;
         }
-        .btn-youtube {
-            background: linear-gradient(180deg, #ff2e4d 0%, #ff002b 100%);
-            box-shadow: 0 4px 15px rgba(255, 0, 43, 0.35);
-        }
         .card-shadow {
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
@@ -40,8 +36,8 @@
         <nav class="bg-custom-nav text-gray-200 text-sm py-2.5">
             <div class="max-w-4xl mx-auto flex flex-wrap justify-center items-center gap-6 px-4 font-medium">
                 <a href="#" onclick="showHome()" class="hover:text-white transition">Trang chủ</a>
-                <a href="http://www.youtube.com/@FISHMODZ-o3j" target="_blank" class="hover:text-white transition">FISH MOD Z</a>
-                <a href="http://www.youtube.com/@MODSKINFF-q4f" target="_blank" class="hover:text-white transition">MOD SKIN FF</a>
+                <a href="https://www.youtube.com/@FISHMODZ-o3j" target="_blank" class="hover:text-white transition">FISH MOD Z</a>
+                <a href="https://www.youtube.com/@MODSKINFF-q4f" target="_blank" class="hover:text-white transition">MOD SKIN FF</a>
             </div>
         </nav>
     </header>
@@ -49,11 +45,11 @@
     <!-- TRANG CHỦ (HOME PAGE) -->
     <main id="home-page" class="max-w-5xl mx-auto px-4 py-6 flex-1 w-full">
         
-        <!-- THÔNG BÁO AN TOÀN & OB55 -->
+        <!-- THÔNG BÁO AN TOÀN -->
         <div class="max-w-3xl mx-auto space-y-3 mb-8">
             <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
                 <span>🛡️</span>
-                <span>Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file như 1 số bản mod khác nên không ban ID đâu nhé ae ❤️</span>
+                <span>Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file nên không ban ID đâu nhé ae ❤️</span>
             </div>
 
             <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-2.5 text-center text-xs md:text-sm shadow-sm inline-block w-full flex items-center justify-center gap-2">
@@ -68,10 +64,27 @@
             <!-- CARD 1 -->
             <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(1)">
                 <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
-                    <img src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
+                    <img src="Picsart_26-09-16_17-28-08-028.jpg" 
+                         onerror="this.src='https://via.placeholder.com/600x400?text=FISH+MOD+Z'" 
+                         alt="MOD SKIN HELLO KITTY" 
+                         class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                     <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h2>
+                    <p class="text-gray-500 text-xs md:text-sm">Nhân Vật: ALOK Thức Tỉnh</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(2)">
+                <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
+                    <img src="Picsart_26-09-16_17-28-08-028.jpg" 
+                         onerror="this.src='https://via.placeholder.com/600x400?text=FISH+MOD+Z'" 
+                         alt="MOD SKIN SPIDER MAN" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">MOD SKIN SPIDER MAN</h2>
                     <p class="text-gray-500 text-xs md:text-sm">Nhân Vật: ALOK Thức Tỉnh</p>
                 </div>
             </div>
@@ -89,7 +102,10 @@
             
             <!-- ẢNH BÀI VIẾT -->
             <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100 mb-4">
-                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
+                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028.jpg" 
+                     onerror="this.src='https://via.placeholder.com/600x400?text=FISH+MOD+Z'" 
+                     alt="Chi tiết Mod" 
+                     class="w-full h-full object-cover">
             </div>
 
             <!-- NGÀY ĐĂNG -->
@@ -106,6 +122,12 @@
 
                 <p class="font-semibold text-gray-900 flex items-center gap-1.5 pt-2">
                     <span>📦</span> Phiên bản hỗ trợ
+                </p>
+                <p class="flex items-center gap-2 pl-2">
+                    <span class="text-emerald-600 font-bold">✅</span> ANDROID
+                </p>
+                <p class="flex items-center gap-2 pl-2">
+                    <span class="text-emerald-600 font-bold">✅</span> IOS
                 </p>
                 <p class="flex items-center gap-2 pl-2">
                     <span class="text-emerald-600 font-bold">✅</span> FF Thường
@@ -126,12 +148,12 @@
                     <span>📱</span> Android
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <a href="#" onclick="alert('https://link4m.org/f0YHMa')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                    <button onclick="window.open('https://link4m.org/f0YHMa', '_blank')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
                         FF Thường
-                    </a>
-                    <a href="#" onclick="alert('https://link4m.org/iSPhw2')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                    </button>
+                    <button onclick="window.open('https://link4m.org/iSPhw2', '_blank')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
                         FF Max
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -141,12 +163,12 @@
                     <span>🍎</span> iOS
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <a href="#" onclick="alert('https://link4m.net/rVSuuH5')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                    <button onclick="window.open('https://link4m.net/rVSuuH5', '_blank')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
                         FF Thường
-                    </a>
-                    <a href="#" onclick="alert('https://link4m.net/4mQo6')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                    </button>
+                    <button onclick="window.open('https://link4m.net/4mQo6', '_blank')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
                         FF Max
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -173,6 +195,12 @@
                 img: "Picsart_26-09-16_17-28-08-028.jpg",
                 gun: "Nhân vật: ALOK Thức Tỉnh",
                 sub: "V1 - NẠ CỎ"
+            },
+            2: {
+                title: "MOD SKIN SPIDER MAN",
+                img: "Picsart_26-09-16_17-28-08-028.jpg",
+                gun: "Nhân vật: ALOK Thức Tỉnh",
+                sub: "V2 - NẠ MA BÚP BÊ NHAM THẠCH"
             }
         };
 
