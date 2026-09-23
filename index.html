@@ -1,622 +1,247 @@
 <!DOCTYPE html>
-<html lang="vi" class="dark scroll-smooth">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEN MOD Z - Mod Skin Free Fire Uy Tín & An Toàn OB55</title>
+    <title>FISH MOD Z - Mod Skin Free Fire</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        darkbg: '#080c14',
-                        cardbg: '#0f172a',
-                        bordercolor: '#1e293b',
-                        neonPurple: '#a855f7',
-                        neonRed: '#ef4444',
-                        neonCyan: '#06b6d4',
-                    },
-                    boxShadow: {
-                        'neon-purple': '0 0 20px rgba(168, 85, 247, 0.4)',
-                        'neon-red': '0 0 20px rgba(239, 68, 68, 0.4)',
-                        'neon-cyan': '0 0 20px rgba(6, 182, 212, 0.3)',
-                    },
-                    keyframes: {
-                        pulseGlow: {
-                            '0%, 100%': { opacity: 1, filter: 'drop-shadow(0 0 10px rgba(239, 68, 68, 0.8))' },
-                            '50%': { opacity: 0.85, filter: 'drop-shadow(0 0 20px rgba(239, 68, 68, 1))' }
-                        }
-                    },
-                    animation: {
-                        'pulse-glow': 'pulseGlow 2s infinite',
-                    }
-                }
-            }
-        }
-    </script>
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #080c14;
-            color: #f1f5f9;
+            background-color: #f4f4f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-        .font-gaming {
-            font-family: 'Orbitron', sans-serif;
+        .bg-custom-header {
+            background-color: #111111;
         }
-        .text-gradient-neon {
-            background: linear-gradient(135deg, #f43f5e 0%, #a855f7 50%, #3b82f6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .bg-custom-nav {
+            background-color: #1a1a1a;
         }
-        .text-gradient-red {
-            background: linear-gradient(135deg, #ff4d4d 0%, #ef4444 50%, #991b1b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .btn-youtube {
+            background: linear-gradient(180deg, #ff2e4d 0%, #ff002b 100%);
+            box-shadow: 0 4px 15px rgba(255, 0, 43, 0.35);
         }
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #080c14;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #334155;
+        .card-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-purple-600 selection:text-white">
+<body class="text-gray-800 antialiased min-h-screen flex flex-col">
 
-    <!-- Header Navigation Bar -->
-    <header class="sticky top-0 z-40 bg-[#080c14]/90 backdrop-blur-md border-b border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo -->
-                <a href="#home" class="flex items-center space-x-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-red-600 via-purple-600 to-indigo-500 p-0.5 shadow-neon-purple flex items-center justify-center group-hover:scale-105 transition duration-300">
-                        <div class="w-full h-full bg-[#080c14] rounded-[10px] flex items-center justify-center">
-                            <i class="fa-solid fa-crosshairs text-xl text-red-500 group-hover:rotate-45 transition duration-300"></i>
-                        </div>
-                    </div>
-                    <span class="text-2xl font-black font-gaming tracking-wider text-gradient-neon group-hover:brightness-125 transition">
-                        KEN MOD Z
-                    </span>
-                </a>
-
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex items-center space-x-2">
-                    <a href="#home" class="px-4 py-2 rounded-xl text-sm font-semibold text-white bg-slate-800/80 hover:bg-slate-700 transition flex items-center gap-2">
-                        <i class="fa-solid fa-house text-purple-400"></i> Trang chủ
-                    </a>
-                    <button onclick="openModal('guideModal')" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-2">
-                        <i class="fa-solid fa-book-open text-cyan-400"></i> Hướng Dẫn / Lưu Ý
-                    </button>
-                    <a href="https://youtube.com" target="_blank" class="px-4 py-2 rounded-xl text-sm font-semibold text-slate-300 hover:text-red-400 hover:bg-slate-800 transition flex items-center gap-2">
-                        <i class="fa-brands fa-youtube text-red-500 text-base"></i> Youtube
-                    </a>
-                    <a href="https://zalo.me" target="_blank" class="ml-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-600 via-purple-600 to-indigo-600 hover:from-red-500 hover:to-indigo-500 shadow-neon-red transition transform hover:-translate-y-0.5 flex items-center gap-2">
-                        <i class="fa-solid fa-paper-plane"></i> Mod Theo Yêu Cầu
-                    </a>
-                </nav>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none border border-slate-800">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
+    <!-- HEADER & NAVIGATION -->
+    <header class="w-full">
+        <!-- Logo Header -->
+        <div class="bg-custom-header text-white text-center py-4 border-b border-gray-800">
+            <h1 class="text-2xl md:text-3xl font-extrabold tracking-wider cursor-pointer" onclick="showHome()">KEN MOD Z</h1>
+        </div>
+        <!-- Menu Navigation -->
+        <nav class="bg-custom-nav text-gray-200 text-sm py-2.5">
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center items-center gap-6 px-4 font-medium">
+                <a href="#" onclick="showHome()" class="hover:text-white transition">Trang chủ</a>
+                <a href="#" onclick="openModal()" class="hover:text-white transition">Hướng dẫn / Lưu ý</a>
+                <a href="https://youtube.com" target="_blank" class="hover:text-white transition">Youtube</a>
+                <a href="#" onclick="openModal()" class="hover:text-white transition">Mod theo yêu cầu</a>
             </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-3 pb-5 space-y-2">
-            <a href="#home" class="block px-4 py-2.5 rounded-xl text-base font-semibold text-white bg-slate-800/90 flex items-center gap-3">
-                <i class="fa-solid fa-house text-purple-400"></i> Trang chủ
-            </a>
-            <button onclick="openModal('guideModal'); toggleMobileMenu();" class="w-full text-left px-4 py-2.5 rounded-xl text-base font-semibold text-slate-300 hover:bg-slate-800 flex items-center gap-3">
-                <i class="fa-solid fa-book-open text-cyan-400"></i> Hướng Dẫn / Lưu Ý
-            </button>
-            <a href="https://youtube.com" target="_blank" class="block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-300 hover:bg-slate-800 flex items-center gap-3">
-                <i class="fa-brands fa-youtube text-red-500"></i> Kênh Youtube
-            </a>
-            <a href="https://zalo.me" target="_blank" class="block text-center mt-3 px-4 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-red-600 to-purple-600 shadow-neon-red">
-                <i class="fa-solid fa-paper-plane mr-2"></i> Mod Theo Yêu Cầu
-            </a>
-        </div>
+        </nav>
     </header>
 
-    <!-- Main Body Container -->
-    <main id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
-
-        <!-- 1. Red YouTube Banner Announcement -->
-        <div class="mb-8">
-            <a href="https://youtube.com" target="_blank" class="group relative block overflow-hidden rounded-2xl p-0.5 bg-gradient-to-r from-red-600 via-rose-500 to-red-700 shadow-neon-red hover:scale-[1.01] transition duration-300 animate-pulse-glow">
-                <div class="bg-slate-950/90 rounded-[15px] p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div class="flex items-center space-x-4 text-center sm:text-left">
-                        <div class="w-14 h-14 rounded-2xl bg-red-600/20 text-red-500 border border-red-500/30 flex items-center justify-center shrink-0">
-                            <i class="fa-brands fa-youtube text-3xl"></i>
-                        </div>
-                        <div>
-                            <span class="inline-block px-3 py-0.5 rounded-full text-xs font-black bg-red-600 text-white uppercase tracking-wider mb-1.5 shadow-sm">
-                                THÔNG BÁO KÊNH CHÍNH
-                            </span>
-                            <h3 class="text-lg sm:text-xl font-black text-white group-hover:text-red-400 transition flex items-center gap-2">
-                                📢 Ấn Vào Đây Để Đăng Kí Kênh Mới Nhé
-                            </h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-0.5">
-                                Kênh cũ bị sự cố, đăng ký kênh mới ngay để cập nhật bản mod mới nhất hàng ngày!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="shrink-0 w-full sm:w-auto">
-                        <button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm shadow-lg shadow-red-600/40 flex items-center justify-center gap-2 transition">
-                            <i class="fa-solid fa-bell"></i> Đăng Ký Ngay
-                        </button>
-                    </div>
-                </div>
+    <!-- TRANG CHỦ (HOME PAGE) -->
+    <main id="home-page" class="max-w-5xl mx-auto px-4 py-6 flex-1 w-full">
+        
+        <!-- THÔNG BÁO YOUTUBE (RED BANNER) -->
+        <div class="mb-5 text-center">
+            <a href="http://www.youtube.com/@MODSKINFF-q4f" target="_blank" class="btn-youtube inline-flex items-center justify-center text-white font-bold py-3 px-8 rounded-full text-sm md:text-base transition hover:scale-105">
+                <i class="fa-solid fa-bullhorn mr-2"></i> Ấns Vào Đây Để Đăng Kí Kênh Mới Nhé
             </a>
         </div>
 
-        <!-- 2. Notice Cards (Safety & OB Version Update) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+        <!-- THÔNG BÁO AN TOÀN & OB55 (GREEN BANNERS) -->
+        <div class="max-w-3xl mx-auto space-y-3 mb-8">
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
+                <span>🛡️</span>
+                <span>Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file như 1 số bản mod khác nên không ban ID đâu nhé ae ❤️</span>
+            </div>
+
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-2.5 text-center text-xs md:text-sm shadow-sm inline-block w-full flex items-center justify-center gap-2">
+                <i class="fa-solid fa-bullhorn text-emerald-700"></i>
+                <span>OB55 đã chính thức được cập nhật, anh em không nên dùng lại mod cũ nhé</span>
+            </div>
+        </div>
+
+        <!-- DANH SÁCH BÀI VIẾT MOD SKIN -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <!-- Safety Notice Card -->
-            <div class="relative overflow-hidden bg-slate-900/90 border border-emerald-500/30 rounded-2xl p-5 shadow-lg backdrop-blur-sm group hover:border-emerald-500/60 transition duration-300">
-                <div class="absolute -top-12 -right-12 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
-                <div class="flex items-start space-x-4">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0">
-                        <i class="fa-solid fa-shield-halved text-2xl"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <div class="flex items-center justify-between">
-                            <h4 class="text-emerald-400 font-bold text-base flex items-center gap-2">
-                                Đảm Bảo An Toàn
-                            </h4>
-                            <span class="px-2.5 py-0.5 text-[10px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-md">
-                                ANTI-BAN
-                            </span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            🛡️ Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file như 1 số bản mod khác nên <strong class="text-emerald-300 font-semibold">không ban ID đâu nhé ae ❤️</strong>
-                        </p>
-                    </div>
+            <!-- CARD 1 -->
+            <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(1)">
+                <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
+                    <img src="https://picsum.photos/800/450?random=1" alt="Mod Skin FF OB55 V6 M590" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">Mod Skin FF OB55 V6 M590 Đa Điện Và Mega</h2>
+                    <p class="text-gray-500 text-xs md:text-sm">Súng: M590 Phong Xà</p>
                 </div>
             </div>
 
-            <!-- OB Update Notice Card -->
-            <div class="relative overflow-hidden bg-slate-900/90 border border-amber-500/30 rounded-2xl p-5 shadow-lg backdrop-blur-sm group hover:border-amber-500/60 transition duration-300">
-                <div class="absolute -top-12 -right-12 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
-                <div class="flex items-start space-x-4">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center shrink-0">
-                        <i class="fa-solid fa-bullhorn text-2xl animate-bounce"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <div class="flex items-center justify-between">
-                            <h4 class="text-amber-400 font-bold text-base flex items-center gap-2">
-                                Cập Nhật OB55
-                            </h4>
-                            <span class="px-2.5 py-0.5 text-[10px] font-black bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-md">
-                                LƯU Ý HOT
-                            </span>
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            📢 <strong class="text-amber-300 font-semibold">OB55 đã chính thức được cập nhật</strong>, anh em lưu ý không nên dùng lại mod cũ nhé để tránh văng game hoặc lỗi không tương thích.
-                        </p>
-                    </div>
+            <!-- CARD 2 -->
+            <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(2)">
+                <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
+                    <img src="https://picsum.photos/800/450?random=2" alt="Mod Skin FF OB55 V5 Set Đồ Wasana" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">Mod Skin FF OB55 V5 Set Đồ Wasana</h2>
+                    <p class="text-gray-500 text-xs md:text-sm">Nhân Vật: Alok thức tỉnh hoặc Ignis</p>
                 </div>
             </div>
 
         </div>
-
-        <!-- 3. Filter & Search Controls -->
-        <section class="space-y-6">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 bg-slate-900/80 p-5 rounded-2xl border border-slate-800">
-                <div>
-                    <h2 class="text-2xl font-black font-gaming text-white tracking-wide flex items-center gap-2">
-                        <i class="fa-solid fa-fire text-red-500"></i> BẢN MOD MỚI NHẤT
-                    </h2>
-                    <p class="text-xs text-slate-400 mt-1">Danh sách Mod Skin Free Fire được cập nhật tương thích OB55</p>
-                </div>
-
-                <!-- Filters & Search Controls -->
-                <div class="flex flex-col sm:flex-row items-center gap-3">
-                    
-                    <!-- Search Bar -->
-                    <div class="relative w-full sm:w-64">
-                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-                        <input type="text" id="searchInput" onkeyup="filterMods()" placeholder="Tìm tên bản mod..." class="w-full bg-slate-950 border border-slate-800 text-slate-200 text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition">
-                    </div>
-
-                    <!-- Category Buttons -->
-                    <div class="flex flex-wrap gap-1.5 w-full sm:w-auto">
-                        <button onclick="setCategory('all', this)" class="filter-btn active px-3.5 py-2 rounded-xl text-xs font-bold bg-purple-600 text-white transition">
-                            Tất Cả
-                        </button>
-                        <button onclick="setCategory('sung', this)" class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-950 hover:bg-slate-800 text-slate-300 transition border border-slate-800">
-                            Mod Súng
-                        </button>
-                        <button onclick="setCategory('trangphuc', this)" class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-950 hover:bg-slate-800 text-slate-300 transition border border-slate-800">
-                            Mod Trang Phục
-                        </button>
-                        <button onclick="setCategory('combo', this)" class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-950 hover:bg-slate-800 text-slate-300 transition border border-slate-800">
-                            Mod Combo
-                        </button>
-                        <button onclick="setCategory('tran', this)" class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-950 hover:bg-slate-800 text-slate-300 transition border border-slate-800">
-                            Mod Trận
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Mod Grid Cards -->
-            <div id="modGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Mod Item 1 -->
-                <div class="mod-card group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition duration-300 hover:-translate-y-1 hover:shadow-neon-purple flex flex-col justify-between" data-category="combo" data-title="mod full combo skin trang phuc sung ob55">
-                    <div>
-                        <div class="relative h-52 overflow-hidden bg-slate-950">
-                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop" alt="Mod Combo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
-                            <div class="absolute top-3 left-3 flex gap-2">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md">
-                                    MOD COMBO
-                                </span>
-                                <span class="px-2 py-1 rounded-lg text-xs font-bold bg-red-600 text-white animate-pulse">
-                                    🔥 HOT
-                                </span>
-                            </div>
-                            <div class="absolute top-3 right-3">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/90 text-white backdrop-blur-md">
-                                    OB55
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition line-clamp-1">
-                                Mod Full Combo Skin Trang Phục & Súng EVO Max
-                            </h3>
-                            <p class="text-xs text-slate-400 mb-4 line-clamp-2">
-                                Tổng hợp full bộ Quỷ Kiếm, AK Rồng Xanh Lv7, M1887 Vũ Trụ, Nắm Đấm Kim Cương cực mượt không lag.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 pt-0">
-                        <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800/80 mb-4">
-                            <span><i class="fa-solid fa-download text-purple-400 mr-1"></i> 18.4k lượt tải</span>
-                            <span><i class="fa-solid fa-clock text-slate-500 mr-1"></i> 2 giờ trước</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button onclick="openModal('guideModal')" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition flex items-center justify-center gap-1.5 border border-slate-700/50">
-                                <i class="fa-solid fa-circle-info text-cyan-400"></i> Xem Chi Tiết
-                            </button>
-                            <a href="#" onclick="handleDownload('Mod Full Combo Skin Trang Phục & Súng EVO')" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-500 hover:to-purple-500 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-md shadow-purple-900/30">
-                                <i class="fa-solid fa-download"></i> Tải Ngay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mod Item 2 -->
-                <div class="mod-card group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition duration-300 hover:-translate-y-1 hover:shadow-neon-purple flex flex-col justify-between" data-category="sung" data-title="mod pack all skin sung evo level max ob55">
-                    <div>
-                        <div class="relative h-52 overflow-hidden bg-slate-950">
-                            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop" alt="Mod Skin Súng" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
-                            <div class="absolute top-3 left-3 flex gap-2">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-gradient-to-r from-rose-600 to-red-600 text-white shadow-md">
-                                    MOD SÚNG
-                                </span>
-                            </div>
-                            <div class="absolute top-3 right-3">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/90 text-white backdrop-blur-md">
-                                    OB55
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition line-clamp-1">
-                                Mod Pack All Skin Súng Tiến Hóa Full Hiệu Ứng
-                            </h3>
-                            <p class="text-xs text-slate-400 mb-4 line-clamp-2">
-                                Đầy đủ các khẩu súng EVO hot nhất: MP40 Mãng Xà, M1014 Long Tộc, Scarlet M4A1 full âm thanh & hiệu ứng hạ gục.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 pt-0">
-                        <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800/80 mb-4">
-                            <span><i class="fa-solid fa-download text-purple-400 mr-1"></i> 12.9k lượt tải</span>
-                            <span><i class="fa-solid fa-shield-check text-emerald-400 mr-1"></i> Anti-Ban</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button onclick="openModal('guideModal')" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition flex items-center justify-center gap-1.5 border border-slate-700/50">
-                                <i class="fa-solid fa-circle-info text-cyan-400"></i> Xem Chi Tiết
-                            </button>
-                            <a href="#" onclick="handleDownload('Mod Pack All Skin Súng Tiến Hóa')" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-500 hover:to-purple-500 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-md shadow-purple-900/30">
-                                <i class="fa-solid fa-download"></i> Tải Ngay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mod Item 3 -->
-                <div class="mod-card group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition duration-300 hover:-translate-y-1 hover:shadow-neon-purple flex flex-col justify-between" data-category="trangphuc" data-title="mod trang phuc hiphop phong cach anime ob55">
-                    <div>
-                        <div class="relative h-52 overflow-hidden bg-slate-950">
-                            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=800&auto=format&fit=crop" alt="Mod Trang phục" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
-                            <div class="absolute top-3 left-3 flex gap-2">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md">
-                                    TRANG PHỤC
-                                </span>
-                            </div>
-                            <div class="absolute top-3 right-3">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/90 text-white backdrop-blur-md">
-                                    OB55
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition line-clamp-1">
-                                Mod Skin Hip Hop Mùa 1 & Set Trang Phục Anime
-                            </h3>
-                            <p class="text-xs text-slate-400 mb-4 line-clamp-2">
-                                Thay đổi đồ mặc định thành Hip Hop Mùa 1, Thánh Nữ, Sát Thủ Âm Phủ phong cách cực ngầu cho nhân vật Nam/Nữ.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 pt-0">
-                        <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800/80 mb-4">
-                            <span><i class="fa-solid fa-download text-purple-400 mr-1"></i> 9.1k lượt tải</span>
-                            <span><i class="fa-solid fa-bolt text-yellow-400 mr-1"></i> Nhẹ Mượt</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button onclick="openModal('guideModal')" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition flex items-center justify-center gap-1.5 border border-slate-700/50">
-                                <i class="fa-solid fa-circle-info text-cyan-400"></i> Xem Chi Tiết
-                            </button>
-                            <a href="#" onclick="handleDownload('Mod Skin Hip Hop Mùa 1')" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-500 hover:to-purple-500 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-md shadow-purple-900/30">
-                                <i class="fa-solid fa-download"></i> Tải Ngay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mod Item 4 -->
-                <div class="mod-card group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition duration-300 hover:-translate-y-1 hover:shadow-neon-purple flex flex-col justify-between" data-category="tran" data-title="mod hieu ung tran hanh dong am thanh ob55">
-                    <div>
-                        <div class="relative h-52 overflow-hidden bg-slate-950">
-                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop" alt="Mod Trận" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100">
-                            <div class="absolute top-3 left-3 flex gap-2">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-md">
-                                    MOD TRẬN
-                                </span>
-                            </div>
-                            <div class="absolute top-3 right-3">
-                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-500/90 text-white backdrop-blur-md">
-                                    OB55
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition line-clamp-1">
-                                Mod Hiệu Ứng Bắn & Âm Thanh Trận Đấu Độc Quyền
-                            </h3>
-                            <p class="text-xs text-slate-400 mb-4 line-clamp-2">
-                                Tăng trải nghiệm chơi game với hiệu ứng killfeed độc lạ, âm thanh headshot cực đã tai và hành động mượt mà.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 pt-0">
-                        <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800/80 mb-4">
-                            <span><i class="fa-solid fa-download text-purple-400 mr-1"></i> 7.3k lượt tải</span>
-                            <span><i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> Khuyên dùng</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button onclick="openModal('guideModal')" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition flex items-center justify-center gap-1.5 border border-slate-700/50">
-                                <i class="fa-solid fa-circle-info text-cyan-400"></i> Xem Chi Tiết
-                            </button>
-                            <a href="#" onclick="handleDownload('Mod Hiệu Ứng Bắn & Âm Thanh Trận')" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-500 hover:to-purple-500 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-md shadow-purple-900/30">
-                                <i class="fa-solid fa-download"></i> Tải Ngay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- No Results Container -->
-            <div id="noResults" class="hidden text-center py-16 bg-slate-900/40 rounded-2xl border border-dashed border-slate-800">
-                <i class="fa-solid fa-ghost text-5xl text-slate-600 mb-3 animate-bounce"></i>
-                <p class="text-slate-300 font-bold text-lg">Không tìm thấy bản mod nào!</p>
-                <p class="text-xs text-slate-500 mt-1">Vui lòng thử tìm kiếm với từ khóa hoặc danh mục khác.</p>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Modal: Hướng dẫn / Lưu ý cài đặt mod bằng ZArchiver -->
-    <div id="guideModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-4 overflow-y-auto">
-        <div class="relative bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl overflow-hidden my-8 animate-in fade-in zoom-in duration-200">
+    <!-- TRANG CHI TIẾT BÀI VIẾT (DETAIL PAGE) -->
+    <main id="detail-page" class="hidden max-w-4xl mx-auto px-4 py-6 flex-1 w-full">
+        <div class="bg-white rounded-2xl p-4 md:p-6 card-shadow border border-gray-100">
             
-            <!-- Modal Header -->
-            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
-                <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                    <i class="fa-solid fa-book-open text-cyan-400"></i> Hướng Dẫn Cài Đặt Mod (ZArchiver)
+            <!-- TIÊU ĐỀ CHI TIẾT -->
+            <h1 id="detail-title" class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Mod Skin FF OB55 V6 M590 Đa Điện Và Phong Xà</h1>
+            
+            <!-- ANH BÀI VIẾT -->
+            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100 mb-4">
+                <img id="detail-img" src="https://picsum.photos/800/450?random=1" alt="Detail Image" class="w-full h-full object-cover">
+            </div>
+
+            <!-- NGÀY ĐĂNG -->
+            <p class="text-xs text-gray-500 mb-4">Ngày đăng: 22/09/2026</p>
+
+            <!-- THÔNG TIN TRANG BỊ -->
+            <div class="space-y-2 mb-6 text-sm text-gray-700">
+                <p class="font-semibold text-gray-900 flex items-center gap-1.5">
+                    <span>🎭</span> Trang bị
+                </p>
+                <p id="detail-gun" class="flex items-center gap-2 pl-2">
+                    <span class="text-emerald-600 font-bold">✅</span> Súng: M590 Phong Xà
+                </p>
+
+                <p class="font-semibold text-gray-900 flex items-center gap-1.5 pt-2">
+                    <span>📦</span> Phiên bản hỗ trợ
+                </p>
+                <p class="flex items-center gap-2 pl-2">
+                    <span class="text-emerald-600 font-bold">✅</span> FF Thường
+                </p>
+                <p class="flex items-center gap-2 pl-2">
+                    <span class="text-emerald-600 font-bold">✅</span> FF Max
+                </p>
+            </div>
+
+            <!-- TÊN BẢN MOD -->
+            <h2 id="detail-sub" class="text-base md:text-lg font-bold text-gray-900 mb-6 border-t pt-4">
+                V1 - M590 - Phong Xà - Đa Điện ( Không hiệu ứng đổi súng )
+            </h2>
+
+            <!-- KHU VỰC TẢI XUỐNG ANDROID -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-5 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>📱</span> Android
                 </h3>
-                <button onclick="closeModal('guideModal')" class="text-slate-400 hover:text-white p-1.5 rounded-lg hover:bg-slate-800 transition">
-                    <i class="fa-solid fa-xmark text-xl"></i>
-                </button>
-            </div>
-
-            <!-- Modal Content Body -->
-            <div class="py-4 space-y-4 text-sm text-slate-300 max-h-[70vh] overflow-y-auto pr-1">
-                
-                <!-- Notice Box -->
-                <div class="p-3.5 bg-emerald-950/40 border border-emerald-500/30 rounded-xl">
-                    <h4 class="font-bold text-emerald-400 mb-1 flex items-center gap-2 text-xs">
-                        <i class="fa-solid fa-shield-halved"></i> NGUYÊN TẮC BẢO VỆ TÀI KHOẢN:
-                    </h4>
-                    <p class="text-xs text-emerald-200/80 leading-relaxed">
-                        Tất cả file Mod tại Ken Mod Z đã qua kiểm duyệt an toàn, không đụng vào hệ thống lõi game nên an toàn 100% không lo bị khóa acc.
-                    </p>
-                </div>
-
-                <!-- Steps List -->
-                <div class="space-y-3 pt-2">
-                    <h4 class="font-bold text-white text-sm">Các bước cài đặt cực đơn giản:</h4>
-                    
-                    <div class="flex items-start gap-3 bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
-                        <div class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs font-black shrink-0">1</div>
-                        <div>
-                            <p class="font-bold text-slate-200 text-xs">Tải File Mod & Ứng Dụng ZArchiver</p>
-                            <p class="text-[11px] text-slate-400 mt-0.5">Tải file Mod từ web và tải ứng dụng <strong class="text-purple-400">ZArchiver</strong> miễn phí trên Google Play Store.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
-                        <div class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
-                        <div>
-                            <p class="font-bold text-slate-200 text-xs">Giải Nén File Mod</p>
-                            <p class="text-[11px] text-slate-400 mt-0.5">Mở ZArchiver &gt; vào thư mục <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-400">Download</code> &gt; Nhấp vào file mod vừa tải và chọn <strong class="text-purple-400">"Giải nén tại đây"</strong>.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
-                        <div class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
-                        <div>
-                            <p class="font-bold text-slate-200 text-xs">Sao Chép Đè Thư Mục Game</p>
-                            <p class="text-[11px] text-slate-400 mt-0.5">Sao chép thư mục <code class="bg-slate-900 px-1 py-0.5 rounded text-pink-400">com.dts.freefireth</code> dán vào đường dẫn: <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-400">Bộ nhớ thiết bị &gt; Android &gt; data</code>.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-3 bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
-                        <div class="w-7 h-7 rounded-lg bg-purple-600 text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
-                        <div>
-                            <p class="font-bold text-slate-200 text-xs">Vào Game & Tận Hưởng</p>
-                            <p class="text-[11px] text-slate-400 mt-0.5">Mở Free Fire và trải nghiệm skin mod đỉnh cao hoàn toàn miễn phí!</p>
-                        </div>
-                    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('Đang tải bản FF Thường (Android)...')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('Đang tải bản FF Max (Android)...')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
                 </div>
             </div>
 
-            <!-- Modal Footer -->
-            <div class="pt-4 border-t border-slate-800 flex justify-end">
-                <button onclick="closeModal('guideModal')" class="px-6 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs transition">
-                    Đã Hiểu & Đóng
+            <!-- KHU VỰC TẢI XUỐNG IOS -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-6 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>🍎</span> iOS
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('Đang tải bản FF Thường (iOS)...')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('Đang tải bản FF Max (iOS)...')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
+                </div>
+            </div>
+
+            <!-- NÚT QUAY LẠI -->
+            <div class="text-center pt-2">
+                <button onclick="showHome()" class="px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium rounded-lg text-sm transition">
+                    ← Quay lại trang chủ
                 </button>
             </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-custom-header text-gray-400 text-center py-4 text-xs mt-auto">
+        <p>© 2026 Ken Mod Z - Mod Skin Free Fire.</p>
+    </footer>
+
+    <!-- MODAL HƯỚNG DẪN -->
+    <div id="modal" class="fixed inset-0 bg-black/60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl p-6 max-w-md w-full card-shadow relative">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Hướng dẫn cài đặt</h3>
+            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                1. Tải ứng dụng <b>ZArchiver</b> trên CH Play/App Store.<br>
+                2. Tải file Mod phù hợp với phiên bản FF của bạn.<br>
+                3. Giải nén và chép đè vào thư mục Game theo hướng dẫn trên Youtube.
+            </p>
+            <button onclick="closeModal()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-lg text-sm">
+                Đã hiểu
+            </button>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800/80 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                
-                <!-- Branding info -->
-                <div class="text-center md:text-left space-y-1">
-                    <span class="text-xl font-black font-gaming text-gradient-neon">KEN MOD Z</span>
-                    <p class="text-xs text-slate-400">Trang web cung cấp bản Mod Skin Free Fire uy tín, mượt mà và an toàn nhất.</p>
-                </div>
-
-                <!-- Social Links -->
-                <div class="flex items-center space-x-3">
-                    <a href="https://youtube.com" target="_blank" title="YouTube" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-red-500 hover:border-red-500/50 flex items-center justify-center transition">
-                        <i class="fa-brands fa-youtube text-lg"></i>
-                    </a>
-                    <a href="https://tiktok.com" target="_blank" title="TikTok" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 flex items-center justify-center transition">
-                        <i class="fa-brands fa-tiktok text-lg"></i>
-                    </a>
-                    <a href="https://zalo.me" target="_blank" title="Zalo" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-blue-500 hover:border-blue-500/50 flex items-center justify-center transition">
-                        <i class="fa-solid fa-comment-dots text-lg"></i>
-                    </a>
-                    <a href="https://t.me" target="_blank" title="Telegram" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-400/50 flex items-center justify-center transition">
-                        <i class="fa-brands fa-telegram text-lg"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="mt-8 pt-6 border-t border-slate-900/80 text-center text-xs text-slate-500">
-                <p>© 2025 - 2026 <span class="text-slate-300 font-bold">Ken Mod Z</span> - Mod Skin Free Fire. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Interactive Logic Script -->
+    <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG -->
     <script>
-        let currentCategory = 'all';
-
-        // Toggle Mobile Navigation Menu
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', toggleMobileMenu);
-
-        function toggleMobileMenu() {
-            mobileMenu.classList.toggle('hidden');
-        }
-
-        // Modal Handlers
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close Modal when clicking outside
-        window.onclick = function(event) {
-            const guideModal = document.getElementById('guideModal');
-            if (event.target === guideModal) {
-                closeModal('guideModal');
+        const dataMods = {
+            1: {
+                title: "Mod Skin FF OB55 V6 M590 Đa Điện Và Phong Xà",
+                img: "https://picsum.photos/800/450?random=1",
+                gun: "Súng: M590 Phong Xà",
+                sub: "V1 - M590 - Phong Xà - Đa Điện ( Không hiệu ứng đổi súng )"
+            },
+            2: {
+                title: "Mod Skin FF OB55 V5 Set Đồ Wasana",
+                img: "https://picsum.photos/800/450?random=2",
+                gun: "Nhân Vật: Alok thức tỉnh hoặc Ignis",
+                sub: "V5 - Set Đồ Wasana Hoàng Gia Full Hiệu Ứng"
             }
         };
 
-        // Category Filter Function
-        function setCategory(category, buttonElement) {
-            currentCategory = category;
+        function showDetail(id) {
+            const item = dataMods[id];
+            if(item) {
+                document.getElementById('detail-title').innerText = item.title;
+                document.getElementById('detail-img').src = item.img;
+                document.getElementById('detail-gun').innerHTML = `<span class="text-emerald-600 font-bold">✅</span> ${item.gun}`;
+                document.getElementById('detail-sub').innerText = item.sub;
 
-            // Update active styles on buttons
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-purple-600', 'text-white');
-                btn.classList.add('bg-slate-950', 'text-slate-300', 'border', 'border-slate-800');
-            });
-
-            buttonElement.classList.remove('bg-slate-950', 'text-slate-300', 'border', 'border-slate-800');
-            buttonElement.classList.add('bg-purple-600', 'text-white');
-
-            filterMods();
+                document.getElementById('home-page').classList.add('hidden');
+                document.getElementById('detail-page').classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
 
-        // Combined Search & Filter Function
-        function filterMods() {
-            const searchValue = document.getElementById('searchInput').value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.mod-card');
-            let visibleCount = 0;
+        function showHome() {
+            document.getElementById('detail-page').classList.add('hidden');
+            document.getElementById('home-page').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
-            cards.forEach(card => {
-                const title = card.getAttribute('data-title').toLowerCase();
-                const category = card.getAttribute('data-category');
+        function openModal() {
+            document.getElementById('modal').classList.remove('hidden');
+        }
 
-                const matchesSearch = title.includes(searchValue);
-                const matchesCategory = (currentCategory === 'all') || (category === currentCategory);
-
-                if (matchesSearch && matchesCategory) {
-                    card.classList.remove('hidden');
-                    visibleCount++;
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
