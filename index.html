@@ -10,38 +10,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: #f4f4f5;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         .bg-custom-header {
-            background-color: #090d16;
+            background-color: #111111;
         }
         .bg-custom-nav {
-            background-color: #111827;
+            background-color: #1a1a1a;
         }
-        .card-bg {
-            background-color: #1e293b;
+        .btn-youtube {
+            background: linear-gradient(180deg, #ff2e4d 0%, #ff002b 100%);
+            box-shadow: 0 4px 15px rgba(255, 0, 43, 0.35);
         }
         .card-shadow {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body class="text-gray-800 antialiased min-h-screen flex flex-col">
 
     <!-- HEADER & NAVIGATION -->
     <header class="w-full">
         <!-- Logo Header -->
-        <div class="bg-custom-header text-white text-center py-4 border-b border-slate-800">
-            <h1 class="text-2xl md:text-3xl font-extrabold tracking-wider cursor-pointer text-amber-500 hover:text-amber-400 transition" onclick="showHome()">FISH MOD Z</h1>
+        <div class="bg-custom-header text-white text-center py-4 border-b border-gray-800">
+            <h1 class="text-2xl md:text-3xl font-extrabold tracking-wider cursor-pointer" onclick="showHome()">FISH MOD Z</h1>
         </div>
         <!-- Menu Navigation -->
-        <nav class="bg-custom-nav text-gray-300 text-sm py-2.5 border-b border-slate-800">
+        <nav class="bg-custom-nav text-gray-200 text-sm py-2.5">
             <div class="max-w-4xl mx-auto flex flex-wrap justify-center items-center gap-6 px-4 font-medium">
-                <a href="#" onclick="showHome()" class="hover:text-amber-400 transition">Trang chủ</a>
-                <a href="http://www.youtube.com/@FISHMODZ-o3j" target="_blank" class="hover:text-amber-400 transition">FISH MOD Z</a>
-                <a href="http://www.youtube.com/@MODSKINFF-q4f" target="_blank" class="hover:text-amber-400 transition">MOD SKIN FF</a>
+                <a href="#" onclick="showHome()" class="hover:text-white transition">Trang chủ</a>
+                <a href="http://www.youtube.com/@FISHMODZ-o3j" target="_blank" class="hover:text-white transition">FISH MOD Z</a>
+                <a href="http://www.youtube.com/@MODSKINFF-q4f" target="_blank" class="hover:text-white transition">MOD SKIN FF</a>
             </div>
         </nav>
     </header>
@@ -51,13 +51,13 @@
         
         <!-- THÔNG BÁO AN TOÀN & OB55 -->
         <div class="max-w-3xl mx-auto space-y-3 mb-8">
-            <div class="bg-emerald-950/80 border border-emerald-800/80 text-emerald-200 rounded-xl p-3.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
                 <span>🛡️</span>
                 <span>Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file như 1 số bản mod khác nên không ban ID đâu nhé ae ❤️</span>
             </div>
 
-            <div class="bg-amber-950/80 border border-amber-800/80 text-amber-200 rounded-xl p-2.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
-                <i class="fa-solid fa-bullhorn text-amber-400"></i>
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-2.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
+                <i class="fa-solid fa-bullhorn text-emerald-700"></i>
                 <span>Thông báo bản cập nhật mới nhất!</span>
             </div>
         </div>
@@ -66,13 +66,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- CARD 1 -->
-            <div class="card-bg rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:scale-[1.02] border border-slate-700/60" onclick="showDetail(1)">
-                <div class="w-full h-56 md:h-64 bg-slate-800 relative overflow-hidden">
-                    <img src="Picsart_26-09-16_17-28-08-028_2.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
+            <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(1)">
+                <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
+                    <img src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
-                    <h2 class="font-bold text-white text-base md:text-lg mb-1 leading-snug">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h2>
-                    <p class="text-slate-400 text-xs md:text-sm">Nhân Vật: ALOK Thức Tỉnh</p>
+                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h2>
+                    <p class="text-gray-500 text-xs md:text-sm">Nhân Vật: ALOK Thức Tỉnh</p>
                 </div>
             </div>
 
@@ -82,47 +82,112 @@
 
     <!-- TRANG CHI TIẾT BÀI VIẾT (DETAIL PAGE) -->
     <main id="detail-page" class="hidden max-w-4xl mx-auto px-4 py-6 flex-1 w-full">
-        <div class="card-bg rounded-2xl p-4 md:p-6 card-shadow border border-slate-700/60">
+        <div class="bg-white rounded-2xl p-4 md:p-6 card-shadow border border-gray-100">
             
             <!-- TIÊU ĐỀ CHI TIẾT -->
-            <h1 id="detail-title" class="text-xl md:text-2xl font-bold text-white mb-4">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h1>
+            <h1 id="detail-title" class="text-xl md:text-2xl font-bold text-gray-900 mb-4">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h1>
             
             <!-- ẢNH BÀI VIẾT -->
-            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-slate-800 mb-4 border border-slate-700">
-                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028_2.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
+            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100 mb-4">
+                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
             </div>
 
             <!-- NGÀY ĐĂNG -->
-            <p class="text-xs text-slate-400 mb-4">Ngày đăng: 16/09/2026</p>
+            <p class="text-xs text-gray-500 mb-4">Ngày đăng: 16/09/2026</p>
 
             <!-- THÔNG TIN TRANG BỊ -->
-            <div class="space-y-2 mb-6 text-sm text-slate-300">
-                <p class="font-semibold text-white flex items-center gap-1.5">
+            <div class="space-y-2 mb-6 text-sm text-gray-700">
+                <p class="font-semibold text-gray-900 flex items-center gap-1.5">
                     <span>🎭</span> Trang bị
                 </p>
                 <p id="detail-gun" class="flex items-center gap-2 pl-2">
-                    <span class="text-emerald-400 font-bold">✅</span> Nhân Vật: ALOK Thức Tỉnh
+                    <span class="text-emerald-600 font-bold">✅</span> Nhân Vật: ALOK Thức Tỉnh
                 </p>
 
-                <p class="font-semibold text-white flex items-center gap-1.5 pt-2">
+                <p class="font-semibold text-gray-900 flex items-center gap-1.5 pt-2">
                     <span>📦</span> Phiên bản hỗ trợ
                 </p>
                 <p class="flex items-center gap-2 pl-2">
-                    <span class="text-emerald-400 font-bold">✅</span> FF Thường
+                    <span class="text-emerald-600 font-bold">✅</span> FF Thường
                 </p>
                 <p class="flex items-center gap-2 pl-2">
-                    <span class="text-emerald-400 font-bold">✅</span> FF Max
+                    <span class="text-emerald-600 font-bold">✅</span> FF Max
                 </p>
             </div>
 
-            <!-- KHO BẢN MOD (V1, V2, ...) -->
-            <div id="versions-container" class="space-y-8 border-t border-slate-700/60 pt-6">
-                <!-- Nội dung các phiên bản sẽ được render qua JS -->
+            <!-- ===== PHẦN V1 ===== -->
+            <h2 class="text-base md:text-lg font-bold text-gray-900 mb-6 border-t pt-4">
+                V1 - NẠ CỎ
+            </h2>
+
+            <!-- KHU VỰC TẢI XUỐNG ANDROID (V1) -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-5 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>📱</span> Android
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('https://link4m.org/f0YHMa')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('https://link4m.org/iSPhw2')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
+                </div>
+            </div>
+
+            <!-- KHU VỰC TẢI XUỐNG IOS (V1) -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-6 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>🍎</span> iOS
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('https://link4m.net/rVSuuH5')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('https://link4m.net/4mQo6')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===== PHẦN V2 ===== -->
+            <h2 class="text-base md:text-lg font-bold text-gray-900 mb-6 border-t pt-4">
+                V2 - NẠ MA BÚP BÊ NHAM THẠCH
+            </h2>
+
+            <!-- KHU VỰC TẢI XUỐNG ANDROID (V2) -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-5 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>📱</span> Android
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('https://link4m.org/f0YHMa')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('https://link4m.org/iSPhw2')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
+                </div>
+            </div>
+
+            <!-- KHU VỰC TẢI XUỐNG IOS (V2) -->
+            <div class="border border-gray-200 rounded-xl p-4 md:p-5 mb-6 bg-white">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2 text-sm md:text-base">
+                    <span>🍎</span> iOS
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="#" onclick="alert('https://link4m.net/rVSuuH5')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Thường
+                    </a>
+                    <a href="#" onclick="alert('https://link4m.net/4mQo6')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                        FF Max
+                    </a>
+                </div>
             </div>
 
             <!-- NÚT QUAY LẠI -->
-            <div class="text-center pt-6 mt-4 border-t border-slate-700/60">
-                <button onclick="showHome()" class="px-6 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-lg text-sm transition border border-slate-600">
+            <div class="text-center pt-2">
+                <button onclick="showHome()" class="px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium rounded-lg text-sm transition">
                     ← Quay lại trang chủ
                 </button>
             </div>
@@ -131,41 +196,17 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-custom-header text-slate-500 text-center py-4 text-xs mt-auto border-t border-slate-800">
+    <footer class="bg-custom-header text-gray-400 text-center py-4 text-xs mt-auto">
         <p>© FISH MOD Z - MOD SKIN FF.</p>
     </footer>
 
-    <!-- JAVASCRIPT XỬ LÝ DỮ LIỆU VÀ CHUYỂN TRANG -->
+    <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG -->
     <script>
         const dataMods = {
             1: {
                 title: "MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG",
-                img: "Picsart_26-09-16_17-28-08-028_2.jpg",
-                gun: "Nhân vật: ALOK Thức Tỉnh",
-                versions: [
-                    {
-                        name: "V1 - NẠ CỎ",
-                        android: {
-                            ff: "https://link4m.org/f0YHMa",
-                            ffMax: "https://link4m.org/iSPhw2"
-                        },
-                        ios: {
-                            ff: "https://link4m.net/rVSuuH5",
-                            ffMax: "https://link4m.net/4mQo6"
-                        }
-                    },
-                    {
-                        name: "V2 - NẠ MA BÚP BÊ NHAM THẠCH",
-                        android: {
-                            ff: "https://link4m.org/f0YHMa",
-                            ffMax: "https://link4m.org/iSPhw2"
-                        },
-                        ios: {
-                            ff: "https://link4m.net/rVSuuH5",
-                            ffMax: "https://link4m.net/4mQo6"
-                        }
-                    }
-                ]
+                img: "Picsart_26-09-16_17-28-08-028.jpg",
+                gun: "Nhân vật: ALOK Thức Tỉnh"
             }
         };
 
@@ -174,47 +215,7 @@
             if(item) {
                 document.getElementById('detail-title').innerText = item.title;
                 document.getElementById('detail-img').src = item.img;
-                document.getElementById('detail-gun').innerHTML = `<span class="text-emerald-400 font-bold">✅</span> ${item.gun}`;
-
-                // Tạo HTML danh sách các bản Mod (V1, V2,...)
-                const versionsContainer = document.getElementById('versions-container');
-                versionsContainer.innerHTML = item.versions.map(v => `
-                    <div class="space-y-4">
-                        <h2 class="text-lg md:text-xl font-bold text-amber-400 border-l-4 border-amber-500 pl-3">
-                            ${v.name}
-                        </h2>
-
-                        <!-- KHU VỰC TẢI XUỐNG ANDROID -->
-                        <div class="border border-slate-700/80 rounded-xl p-4 md:p-5 bg-slate-900/60">
-                            <h3 class="font-bold text-slate-200 mb-3 flex items-center gap-2 text-sm md:text-base">
-                                <span>📱</span> Android
-                            </h3>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <a href="${v.android.ff}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition shadow-sm flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-download text-xs"></i> FF Thường
-                                </a>
-                                <a href="${v.android.ffMax}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition shadow-sm flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-download text-xs"></i> FF Max
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- KHU VỰC TẢI XUỐNG IOS -->
-                        <div class="border border-slate-700/80 rounded-xl p-4 md:p-5 bg-slate-900/60">
-                            <h3 class="font-bold text-slate-200 mb-3 flex items-center gap-2 text-sm md:text-base">
-                                <span>🍎</span> iOS
-                            </h3>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <a href="${v.ios.ff}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition shadow-sm flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-download text-xs"></i> FF Thường
-                                </a>
-                                <a href="${v.ios.ffMax}" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition shadow-sm flex items-center justify-center gap-2">
-                                    <i class="fa-solid fa-download text-xs"></i> FF Max
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
+                document.getElementById('detail-gun').innerHTML = `<span class="text-emerald-600 font-bold">✅</span> ${item.gun}`;
 
                 document.getElementById('home-page').classList.add('hidden');
                 document.getElementById('detail-page').classList.remove('hidden');
