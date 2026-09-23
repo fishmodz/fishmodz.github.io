@@ -49,7 +49,7 @@
     <!-- TRANG CHỦ (HOME PAGE) -->
     <main id="home-page" class="max-w-5xl mx-auto px-4 py-6 flex-1 w-full">
         
-        <!-- THÔNG BÁO AN TOÀN & OB55 (GREEN BANNERS) -->
+        <!-- THÔNG BÁO AN TOÀN & OB55 -->
         <div class="max-w-3xl mx-auto space-y-3 mb-8">
             <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-3.5 text-center text-xs md:text-sm shadow-sm flex items-center justify-center gap-2">
                 <span>🛡️</span>
@@ -58,7 +58,7 @@
 
             <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-2.5 text-center text-xs md:text-sm shadow-sm inline-block w-full flex items-center justify-center gap-2">
                 <i class="fa-solid fa-bullhorn text-emerald-700"></i>
-                <span></span>
+                <span>Thông báo bản cập nhật mới nhất!</span>
             </div>
         </div>
 
@@ -68,13 +68,15 @@
             <!-- CARD 1 -->
             <div class="bg-white rounded-xl overflow-hidden card-shadow cursor-pointer transition hover:shadow-md border border-gray-100" onclick="showDetail(1)">
                 <div class="w-full h-56 md:h-64 bg-gray-200 relative overflow-hidden">
-                    <img src="Picsart_26-09-16_17-28-08-028.jpg" alt="https://careful-aquamarine-i8irt1em.edgeone.dev/" class="w-full h-full object-cover">
+                    <img src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
-                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG </h2>
+                    <h2 class="font-bold text-gray-900 text-base md:text-lg mb-1 leading-snug">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h2>
                     <p class="text-gray-500 text-xs md:text-sm">Nhân Vật: ALOK Thức Tỉnh</p>
                 </div>
             </div>
+
+        </div>
 
     </main>
 
@@ -83,11 +85,11 @@
         <div class="bg-white rounded-2xl p-4 md:p-6 card-shadow border border-gray-100">
             
             <!-- TIÊU ĐỀ CHI TIẾT -->
-            <h1 id="detail-title" class="text-xl md:text-2xl font-bold text-gray-900 mb-4">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG </h1>
+            <h1 id="detail-title" class="text-xl md:text-2xl font-bold text-gray-900 mb-4">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h1>
             
-            <!-- ANH BÀI VIẾT -->
+            <!-- ẢNH BÀI VIẾT -->
             <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100 mb-4">
-                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028.jpg" alt="Detail Image" class="w-full h-full object-cover">
+                <img id="detail-img" src="Picsart_26-09-16_17-28-08-028.jpg" alt="MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY" class="w-full h-full object-cover">
             </div>
 
             <!-- NGÀY ĐĂNG -->
@@ -139,7 +141,7 @@
                     <span>🍎</span> iOS
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <a href="#" onclick="alert('https://link4m.net/rVSuuH5'" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
+                    <a href="#" onclick="alert('https://link4m.net/rVSuuH5')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
                         FF Thường
                     </a>
                     <a href="#" onclick="alert('https://link4m.net/4mQo6')" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg text-center text-sm transition">
@@ -163,16 +165,15 @@
         <p>© FISH MOD Z - MOD SKIN FF.</p>
     </footer>
 
-   
     <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG -->
     <script>
         const dataMods = {
             1: {
-                title: " MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG ",
+                title: "MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG",
                 img: "Picsart_26-09-16_17-28-08-028.jpg",
                 gun: "Nhân vật: ALOK Thức Tỉnh",
-            },
-           
+                sub: "V1 - NẠ CỎ"
+            }
         };
 
         function showDetail(id) {
@@ -193,14 +194,6 @@
             document.getElementById('detail-page').classList.add('hidden');
             document.getElementById('home-page').classList.remove('hidden');
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function openModal() {
-            document.getElementById('modal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.add('hidden');
         }
     </script>
 </body>
