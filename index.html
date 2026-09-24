@@ -252,6 +252,32 @@ body{background:#121212;color:#e4e4e7;font-family:-apple-system,BlinkMacSystemFo
     </div>
 </main>
 
+    <!-- ==================== CARD 7 - ẢNH 1 ==================== -->
+
+<div onclick="openCard7()"
+     class="card bg-card rounded-xl overflow-hidden border cursor-pointer transition hover:border-zinc-700">
+
+    <div class="w-full h-56 md:h-64 bg-zinc-900 relative overflow-hidden">
+
+        <img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/1.png"
+             alt="MOD SKIN ẢNH 1"
+             class="card-image w-full h-full object-cover">
+
+    </div>
+
+    <div class="p-4">
+
+        <h2 class="font-bold text-white text-base md:text-lg mb-1 leading-snug">
+            MOD SKIN ẢNH 1
+        </h2>
+
+        <p class="text-zinc-400 text-xs md:text-sm">
+            Nhân Vật: ALOK Thức Tỉnh
+        </p>
+
+    </div>
+
+</div>
 
 <!-- ==================== TRANG HELLO KITTY ==================== -->
 
@@ -1373,8 +1399,122 @@ body{background:#121212;color:#e4e4e7;font-family:-apple-system,BlinkMacSystemFo
         </div>
 
     </div>
+<!-- ========================================================= -->
+<!-- ==================== TRANG CARD 7 ======================= -->
+<!-- ========================================================= -->
+
+<main id="card7-page"
+      class="hidden max-w-4xl mx-auto px-4 py-6 flex-1 w-full">
+
+<div class="bg-card rounded-2xl p-4 md:p-6 border">
+
+    <h1 class="text-xl md:text-2xl font-bold text-white mb-4">
+        MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG
+    </h1>
+
+    <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden bg-zinc-900 mb-4 border border-zinc-800">
+
+        <img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/1.png"
+             alt="MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG"
+             class="w-full h-full object-cover">
+
+    </div>
+
+    <p class="text-xs text-zinc-400 mb-4">
+        Ngày đăng: 24/09/2026
+    </p>
+
+    <div class="space-y-2 mb-6 text-sm text-zinc-300">
+
+        <p class="font-semibold text-white">
+            🎭 Trang bị
+        </p>
+
+        <p class="pl-2">
+            ✅ Nhân vật: ALOK Thức Tỉnh
+        </p>
+
+        <p class="font-semibold text-white pt-2">
+            📦 Phiên bản hỗ trợ
+        </p>
+
+        <p class="pl-2">
+            ✅ FF Thường
+        </p>
+
+        <p class="pl-2">
+            ✅ FF Max
+        </p>
+
+    </div>
 
 
+    <!-- ==================== V1 ==================== -->
+
+    <h2 class="text-base md:text-lg font-bold text-white mb-6 border-t border-zinc-800 pt-4">
+        
+    </h2>
+
+
+    <!-- ANDROID -->
+
+    <div class="bg-box border rounded-xl p-4 md:p-5 mb-5">
+
+        <h3 class="font-bold text-white mb-4">
+            📱 Android
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+            <a href="https://link4m.org/JKA2N"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center">
+                FF Thường
+            </a>
+
+            <a href="https://link4m.net/ZRpoy89"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center">
+                FF Max
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- IOS -->
+
+    <div class="bg-box border rounded-xl p-4 md:p-5 mb-6">
+
+        <h3 class="font-bold text-white mb-4">
+            🍎 iOS
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+            <a href="https://link4m.net/II1U2"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center">
+                FF Thường
+            </a>
+
+            <a href="https://link4m.net/4aBTmU2Z"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-center">
+                FF Max
+            </a>
+
+        </div>
+
+    </div>
+
+
+    
     <!-- QUAY LẠI -->
 
     <div class="text-center pt-2">
@@ -1413,6 +1553,7 @@ const pages=[
     "card4-page",
     "card5-page",
     "card6-page"
+    "card7-page"
 ];
 
 
@@ -1476,6 +1617,9 @@ function showHome(){
     showPage("home-page");
 }
 
+  function openCard7(){
+    showPage("card7-page");
+}  
 </script>
 
 </body>
