@@ -542,6 +542,27 @@ MOD SKIN NẠ HẮC TINH VER 2 PHONG CÁCH TỬ CHIẾN
 
 </div>
 
+
+<!-- CARD 12 -->
+<div class="card" onclick="openCard12()">
+
+<div class="card-img-wrap">
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/6.jpg"
+alt="MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH"
+class="card-image"
+loading="lazy">
+</div>
+
+<div class="card-content">
+<h2 class="card-title">
+MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH
+</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1453,7 +1474,9 @@ decoding="async">
 </div>
 
 <div class="back-wrap">
-<button onclick="showHome()" class="back-btn">← Quay lại trang chủ</button>
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
 </div>
 
 </div>
@@ -1560,6 +1583,104 @@ FF Max
 </main>
 
 
+<!-- ======================= CARD 12 =========================== -->
+
+<main id="card12-page" class="page hidden detail">
+
+<div class="detail-container">
+
+<div class="detail-box">
+
+<h1 class="detail-title">
+MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH
+</h1>
+
+<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px">
+
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/6.jpg"
+alt="MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH"
+class="detail-img-contain"
+loading="eager"
+decoding="async">
+
+</div>
+
+<p class="date">Ngày đăng: 23/09/2026</p>
+
+<div class="info">
+
+<p class="heading">🎭 Trang bị</p>
+<p>✅ Nhân vật: ALOK Thức Tỉnh</p>
+
+<p class="heading">📦 Phiên bản hỗ trợ</p>
+<p>✅ FF Thường</p>
+<p>✅ FF Max</p>
+
+</div>
+
+<div class="download-box">
+
+<p class="download-title">📱 Android</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.net/EkxpwFn5"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.net/Dx5tmoOx"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+<div class="download-box">
+
+<p class="download-title">🍎 iOS</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.org/8yCSB0HE"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.net/7JG8b"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+<div class="back-wrap">
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+
+</main>
+
+
 <footer>
 <p>© 2026 FISH MOD Z - MOD SKIN FF</p>
 </footer>
@@ -1579,7 +1700,8 @@ const pages=[
     "card8-page",
     "card9-page",
     "card10-page",
-    "card11-page"
+    "card11-page",
+    "card12-page"
 ];
 
 
@@ -1728,6 +1850,31 @@ function showPage(id){
 
         }
 
+
+        /* ĐẢM BẢO ẢNH CARD 12 LUÔN ĐƯỢC TẢI LẠI */
+
+        if(id==="card12-page"){
+
+            const img=target.querySelector(".detail-img-contain");
+
+            if(img){
+
+                const imageURL=
+                    "https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/6.jpg";
+
+                img.loading="eager";
+                img.decoding="async";
+
+                img.src="";
+
+                setTimeout(function(){
+                    img.src=imageURL;
+                },10);
+
+            }
+
+        }
+
     }
 }
 
@@ -1789,6 +1936,11 @@ function openCard10(){
 
 function openCard11(){
     showPage("card11-page");
+}
+
+
+function openCard12(){
+    showPage("card12-page");
 }
 
 
