@@ -22,12 +22,9 @@
 <div class="card" onclick="openCard16()"><div class="card-img-wrap"><img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/10.jpg" alt="MOD SKIN CAPTAIN AMERICAN" class="card-image" loading="lazy"></div><div class="card-content"><h2 class="card-title">MOD SKIN CAPTAIN AMERICAN</h2><p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p></div></div>
 <div class="card" onclick="openCard17()"><div class="card-img-wrap"><img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/11.jpg" alt="MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO" class="card-image" loading="lazy"></div><div class="card-content"><h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO</h2><p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p></div></div>
 <div class="card" onclick="openCard18()"><div class="card-img-wrap"><img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/12.jpg" alt="MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG" class="card-image" loading="lazy"></div><div class="card-content"><h2 class="card-title">MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG</h2><p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p></div></div>
+<div class="card" onclick="openCard19()"><div class="card-img-wrap"><img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/n.avif" alt="MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ" class="card-image" loading="lazy"></div><div class="card-content"><h2 class="card-title">MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ</h2><p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p></div></div>
 
-</div></div></main>
-
-<div id="details"></div>
-
-<footer><p>© 2026 FISH MOD Z - MOD SKIN FF</p></footer>
+</div></div></main><div id="details"></div><footer><p>© 2026 FISH MOD Z - MOD SKIN FF</p></footer>
 
 <script>
 const data={
@@ -48,24 +45,15 @@ const data={
 "card15-page":["MOD SKIN ÁO THỎ QUẬY TÓC LÃNG KHÁCH PHONG CÁCH IDOL TIK TOK","9.jpg","21/09/2026",["","iTciH1","xNkLZN12","O4CZYJq","w2Xa2"]],
 "card16-page":["MOD SKIN CAPTAIN AMERICAN","10.jpg","23/09/2026",["","w5mgF9d","8ZMxMeaw","MK2nsJ","PvWse"]],
 "card17-page":["MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO","11.jpg","24/09/2026",["","UL9yfVVU","VNmKaEeC","2pRrCG","nRYwZJX"]],
-"card18-page":["MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG","12.jpg","22/09/2026",["","tomKB6qo","ZDK6MTc","zww3D","RhaA59b"]]
+"card18-page":["MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG","12.jpg","22/09/2026",["","tomKB6qo","ZDK6MTc","zww3D","RhaA59b"]],
+"card19-page":["MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ","n.avif","21/09/2026",["","https://link4m.net/P7znVItb","https://link4m.org/8MIfIVN","https://link4m.org/kGcPDg","https://link4m.net/kzIu5"]]
 };
 
-const base="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/",pages=["home-page",...Object.keys(data)];
-
-function showPage(id){
-document.querySelectorAll("main.page").forEach(x=>x.classList.add("hidden"));
-const t=document.getElementById(id);
-if(t){t.classList.remove("hidden");window.scrollTo(0,0)}
-}
+const base="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/",pages=["home-page",...Object.keys(data)],link=x=>x.startsWith("http")?x:"https://link4m.org/"+x;
+function showPage(id){document.querySelectorAll("main.page").forEach(x=>x.classList.add("hidden"));const t=document.getElementById(id);if(t){t.classList.remove("hidden");window.scrollTo(0,0)}}
 function showHome(){showPage("home-page")}
-function makePage(id,d){
-let h='<main id="'+id+'" class="page hidden detail"><div class="detail-container"><div class="detail-box"><h1 class="detail-title">'+d[0]+'</h1>';
-h+='<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px"><img src="'+base+d[1]+'" alt="'+d[0]+'" class="detail-img-contain" loading="eager" decoding="async"></div><p class="date">Ngày đăng: '+d[2]+'</p><div class="info"><p class="heading">🎭 Trang bị</p><p>✅ Nhân vật: ALOK Thức Tỉnh</p><p class="heading">📦 Phiên bản hỗ trợ</p><p>✅ FF Thường</p><p>✅ FF Max</p></div>';
-for(let i=3;i<d.length;i++){let v=d[i];if(v[0])h+='<h2 class="version-title">'+v[0]+'</h2>';h+='<div class="download-box"><p class="download-title">📱 Android</p><div class="download-grid"><a href="https://link4m.org/'+v[1]+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="https://link4m.org/'+v[2]+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div><div class="download-box"><p class="download-title">🍎 iOS</p><div class="download-grid"><a href="https://link4m.org/'+v[3]+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="https://link4m.org/'+v[4]+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div>'}
-h+='<div class="back-wrap"><button onclick="showHome()" class="back-btn">← Quay lại trang chủ</button></div></div></div></main>';document.body.insertAdjacentHTML("beforeend",h);
-}
+function makePage(id,d){let h='<main id="'+id+'" class="page hidden detail"><div class="detail-container"><div class="detail-box"><h1 class="detail-title">'+d[0]+'</h1>';h+='<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px"><img src="'+base+d[1]+'" alt="'+d[0]+'" class="detail-img-contain" loading="eager" decoding="async"></div><p class="date">Ngày đăng: '+d[2]+'</p><div class="info"><p class="heading">🎭 Trang bị</p><p>✅ Nhân vật: ALOK Thức Tỉnh</p><p class="heading">📦 Phiên bản hỗ trợ</p><p>✅ FF Thường</p><p>✅ FF Max</p></div>';for(let i=3;i<d.length;i++){let v=d[i];if(v[0])h+='<h2 class="version-title">'+v[0]+'</h2>';h+='<div class="download-box"><p class="download-title">📱 Android</p><div class="download-grid"><a href="'+link(v[1])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="'+link(v[2])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div><div class="download-box"><p class="download-title">🍎 iOS</p><div class="download-grid"><a href="'+link(v[3])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="'+link(v[4])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div>'}h+='<div class="back-wrap"><button onclick="showHome()" class="back-btn">← Quay lại trang chủ</button></div></div></div></main>';document.body.insertAdjacentHTML("beforeend",h)}
 Object.entries(data).forEach(([id,d])=>makePage(id,d));
-["HelloKitty","SpiderMan",...Array.from({length:16},(_,i)=>"Card"+(i+3))].forEach((n,i)=>window["open"+n]=()=>showPage(pages[i+1]));
+["HelloKitty","SpiderMan",...Array.from({length:17},(_,i)=>"Card"+(i+3))].forEach((n,i)=>window["open"+n]=()=>showPage(pages[i+1]));
 showHome();
 </script></body></html>
