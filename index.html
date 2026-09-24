@@ -584,6 +584,27 @@ MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH
 
 </div>
 
+
+<!-- CARD 14 -->
+<div class="card" onclick="openCard14()">
+
+<div class="card-img-wrap">
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/8.png"
+alt="MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ"
+class="card-image"
+loading="lazy">
+</div>
+
+<div class="card-content">
+<h2 class="card-title">
+MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ
+</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1548,11 +1569,19 @@ decoding="async">
 
 <div class="download-grid">
 
-<a href="https://link4m.org/or99Ms6" target="_blank" rel="noopener noreferrer" class="download-btn">
+<a
+href="https://link4m.org/or99Ms6"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
 FF Thường
 </a>
 
-<a href="https://link4m.net/C6awwU" target="_blank" rel="noopener noreferrer" class="download-btn">
+<a
+href="https://link4m.net/C6awwU"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
 FF Max
 </a>
 
@@ -1565,11 +1594,19 @@ FF Max
 
 <div class="download-grid">
 
-<a href="https://link4m.net/b7M2iyDy" target="_blank" rel="noopener noreferrer" class="download-btn">
+<a
+href="https://link4m.net/b7M2iyDy"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
 FF Thường
 </a>
 
-<a href="https://link4m.net/quyJuzK" target="_blank" rel="noopener noreferrer" class="download-btn">
+<a
+href="https://link4m.net/quyJuzK"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
 FF Max
 </a>
 
@@ -1784,6 +1821,104 @@ FF Max
 </main>
 
 
+<!-- ======================= CARD 14 =========================== -->
+
+<main id="card14-page" class="page hidden detail">
+
+<div class="detail-container">
+
+<div class="detail-box">
+
+<h1 class="detail-title">
+MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ
+</h1>
+
+<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px">
+
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/8.png"
+alt="MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ"
+class="detail-img-contain"
+loading="eager"
+decoding="async">
+
+</div>
+
+<p class="date">Ngày đăng: 18/09/2026</p>
+
+<div class="info">
+
+<p class="heading">🎭 Trang bị</p>
+<p>✅ Nhân vật: ALOK Thức Tỉnh</p>
+
+<p class="heading">📦 Phiên bản hỗ trợ</p>
+<p>✅ FF Thường</p>
+<p>✅ FF Max</p>
+
+</div>
+
+<div class="download-box">
+
+<p class="download-title">📱 Android</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.org/V1WasN"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.org/cgM3o"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+<div class="download-box">
+
+<p class="download-title">🍎 iOS</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.org/9W5Ic"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.net/8DlfYVl"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+<div class="back-wrap">
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+
+</main>
+
+
 <footer>
 <p>© 2026 FISH MOD Z - MOD SKIN FF</p>
 </footer>
@@ -1805,7 +1940,8 @@ const pages=[
     "card10-page",
     "card11-page",
     "card12-page",
-    "card13-page"
+    "card13-page",
+    "card14-page"
 ];
 
 
@@ -2004,6 +2140,31 @@ function showPage(id){
 
         }
 
+
+        /* ĐẢM BẢO ẢNH CARD 14 LUÔN ĐƯỢC TẢI LẠI */
+
+        if(id==="card14-page"){
+
+            const img=target.querySelector(".detail-img-contain");
+
+            if(img){
+
+                const imageURL=
+                    "https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/8.png";
+
+                img.loading="eager";
+                img.decoding="async";
+
+                img.src="";
+
+                setTimeout(function(){
+                    img.src=imageURL;
+                },10);
+
+            }
+
+        }
+
     }
 }
 
@@ -2075,6 +2236,11 @@ function openCard12(){
 
 function openCard13(){
     showPage("card13-page");
+}
+
+
+function openCard14(){
+    showPage("card14-page");
 }
 
 
