@@ -458,6 +458,28 @@ MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG
 
 </div>
 
+
+<!-- ================= CARD 8 ================= -->
+
+<div class="card" onclick="openCard8()">
+
+<div class="card-img-wrap">
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/2.png"
+alt="MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG"
+class="card-image"
+loading="lazy">
+</div>
+
+<div class="card-content">
+<h2 class="card-title">
+MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG
+</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1110,7 +1132,6 @@ alt="ÁO ĐÁ BÓNG QUẦN NGỦ">
 MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG
 </h1>
 
-
 <div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px">
 
 <img
@@ -1122,9 +1143,7 @@ decoding="async">
 
 </div>
 
-
 <p class="date">Ngày đăng: 18/09/2026</p>
-
 
 <div class="info">
 
@@ -1137,9 +1156,7 @@ decoding="async">
 
 </div>
 
-
 <h2 class="version-title">V1</h2>
-
 
 <div class="download-box">
 
@@ -1166,7 +1183,6 @@ FF Max
 </div>
 </div>
 
-
 <div class="download-box">
 
 <p class="download-title">🍎 iOS</p>
@@ -1183,6 +1199,107 @@ FF Thường
 
 <a
 href="https://link4m.net/4aBTmU2Z"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+<div class="back-wrap">
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+
+</main>
+
+
+<!-- ======================= CARD 8 =========================== -->
+
+<main id="card8-page" class="page hidden detail">
+
+<div class="detail-container">
+
+<div class="detail-box">
+
+<h1 class="detail-title">
+MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG
+</h1>
+
+<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px">
+
+<img
+src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/2.png"
+alt="MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG"
+class="detail-img-contain"
+loading="eager"
+decoding="async">
+
+</div>
+
+<p class="date">Ngày đăng: 18/09/2026</p>
+
+<div class="info">
+
+<p class="heading">🎭 Trang bị</p>
+<p>✅ Nhân vật: ALOK Thức Tỉnh</p>
+
+<p class="heading">📦 Phiên bản hỗ trợ</p>
+<p>✅ FF Thường</p>
+<p>✅ FF Max</p>
+
+</div>
+
+<h2 class="version-title">V1</h2>
+
+<div class="download-box">
+
+<p class="download-title">📱 Android</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.org/WkQVPz"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.net/sE08J9g"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Max
+</a>
+
+</div>
+</div>
+
+
+<div class="download-box">
+
+<p class="download-title">🍎 iOS</p>
+
+<div class="download-grid">
+
+<a
+href="https://link4m.net/656pss"
+target="_blank"
+rel="noopener noreferrer"
+class="download-btn">
+FF Thường
+</a>
+
+<a
+href="https://link4m.net/GgWV0T"
 target="_blank"
 rel="noopener noreferrer"
 class="download-btn">
@@ -1211,6 +1328,7 @@ FF Max
 
 
 <script>
+
 const pages=[
     "home-page",
     "hello-kitty-page",
@@ -1219,8 +1337,10 @@ const pages=[
     "card4-page",
     "card5-page",
     "card6-page",
-    "card7-page"
+    "card7-page",
+    "card8-page"
 ];
+
 
 function showPage(id){
 
@@ -1255,7 +1375,29 @@ function showPage(id){
                 img.loading="eager";
                 img.decoding="async";
 
-                /* reset ảnh rồi tải lại */
+                img.src="";
+
+                setTimeout(function(){
+                    img.src=imageURL;
+                },10);
+
+            }
+
+        }
+
+        /* ĐẢM BẢO ẢNH CARD 8 LUÔN ĐƯỢC TẢI LẠI */
+        if(id==="card8-page"){
+
+            const img=target.querySelector(".detail-img-contain");
+
+            if(img){
+
+                const imageURL=
+                    "https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/2.png";
+
+                img.loading="eager";
+                img.decoding="async";
+
                 img.src="";
 
                 setTimeout(function(){
@@ -1269,39 +1411,54 @@ function showPage(id){
     }
 }
 
+
 function showHome(){
     showPage("home-page");
 }
+
 
 function openHelloKitty(){
     showPage("hello-kitty-page");
 }
 
+
 function openSpiderMan(){
     showPage("spider-man-page");
 }
+
 
 function openCard3(){
     showPage("card3-page");
 }
 
+
 function openCard4(){
     showPage("card4-page");
 }
+
 
 function openCard5(){
     showPage("card5-page");
 }
 
+
 function openCard6(){
     showPage("card6-page");
 }
+
 
 function openCard7(){
     showPage("card7-page");
 }
 
+
+function openCard8(){
+    showPage("card8-page");
+}
+
+
 showHome();
+
 </script>
 
 </body>
