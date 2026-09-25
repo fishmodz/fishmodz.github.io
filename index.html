@@ -68,6 +68,7 @@
 const base="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/",
 data={
 "card20-page":["MOD SKIN MŨ TVC MÙA 2 ÁO CƯỚP BIỂN PHONG CÁCH DÂN BẮN KAI SƠ","https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5527.JPG.jpeg","26/09/2026",["","https://link4m.org/gKaXDgx","https://link4m.org/nxyHjH","https://link4m.net/dJhOD3","https://link4m.org/nDpOH"]],
+"card21-page":["MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO NẠ CỎ DÂN BẮN KAI SƠ","https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5525.JPG.jpeg","26/09/2026",["","https://link4m.org/9gYeuG","https://link4m.org/gqREnuD","https://link4m.net/Hn1fJqOn","https://link4m.org/4R3Kr"]],
 "card17-page":["MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO","11.jpg","24/09/2026",["","UL9yfVVU","VNmKaEeC","2pRrCG","nRYwZJX"]],
 "card13-page":["MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH","7.png","24/09/2026",["","XQEnKftD","ftAnd","uE51Tle","kTYOPJT"]],
 "card16-page":["MOD SKIN CAPTAIN AMERICAN","10.jpg","23/09/2026",["","w5mgF9d","8ZMxMeaw","MK2nsJ","PvWse"]],
@@ -89,7 +90,7 @@ data={
 };
 
 const name=id=>id=="hello-kitty-page"?"HelloKitty":id=="spider-man-page"?"SpiderMan":"Card"+id.match(/\d+/),
-entries=Object.entries(data);
+entries=Object.entries(data).sort((a,b)=>b[1][2].split("/").reverse().join("").localeCompare(a[1][2].split("/").reverse().join("")));
 
 entries.forEach(([id,d])=>window["open"+name(id)]=()=>showPage(id));
 
