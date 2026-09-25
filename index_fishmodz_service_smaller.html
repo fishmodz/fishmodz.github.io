@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FISH MOD Z - Mod Skin Free Fire</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#121212;color:#e4e4e7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.hidden{display:none!important}
+.bg-header{background:#09090b}
+.container{width:100%;max-width:1024px;margin:auto;padding:0 16px}
+.detail-container{width:100%;max-width:896px;margin:auto;padding:24px 16px}
+.service-box{width:100%;max-width:760px;margin:0 auto;padding:22px 20px!important}
+.service-box h1{font-size:clamp(26px,4vw,44px)!important}
+.service-box h2{font-size:clamp(24px,3.2vw,36px)!important}
+.service-box .service-prices{font-size:clamp(15px,1.8vw,23px)!important}
+header h1{margin:0;font-size:28px;font-weight:800;letter-spacing:.08em;cursor:pointer}
+.header-top{padding:16px;text-align:center;color:#fff;border-bottom:1px solid #27272a}
+nav{background:#18181b;color:#d4d4d8;border-bottom:1px solid #27272a;padding:12px 0}
+.nav-inner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px;font-size:14px;font-weight:500}
+nav a{color:#d4d4d8;text-decoration:none;transition:.2s}
+nav a:hover{color:#fff}
+.page{animation:fadeIn .2s ease}
+.home{flex:1;padding:24px 0}
+.notice-wrap{max-width:768px;margin:0 auto 32px}
+.notice{background:rgba(6,78,59,.4);border:1px solid rgba(6,95,70,.6);color:#6ee7b7;border-radius:12px;padding:13px;margin-bottom:12px;text-align:center;font-size:13px;display:flex;align-items:center;justify-content:center;gap:8px}
+.cards{display:grid;grid-template-columns:1fr;gap:24px}
+.card{background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;cursor:pointer;transition:.2s}
+.card:hover{border-color:#52525b}
+.card-img-wrap{width:100%;height:224px;background:#18181b;overflow:hidden}
+.card-image{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.card:hover .card-image{transform:scale(1.04)}
+.card-content{padding:16px}
+.card-title{margin:0 0 4px;color:#fff;font-size:18px;font-weight:700;line-height:1.35}
+.card-subtitle{margin:0;color:#a1a1aa;font-size:14px}
+.detail{flex:1}
+.detail-box{background:#18181b;border:1px solid #27272a;border-radius:16px;padding:16px}
+.detail-title{margin:0 0 16px;color:#fff;font-size:24px;font-weight:700}
+.detail-img{width:100%;height:384px;object-fit:cover;border-radius:12px;display:block;margin-bottom:16px}
+.detail-img-contain{width:100%;max-height:600px;object-fit:contain;display:block;margin:auto;border-radius:12px}
+.date{color:#a1a1aa;font-size:12px;margin:0 0 24px}
+.info{margin-bottom:24px;color:#d4d4d8;font-size:14px;line-height:1.6}
+.info p{margin:4px 0}
+.info .heading{color:#fff;font-weight:600;margin-top:10px}
+.version-title{color:#fff;font-size:18px;font-weight:700;margin:0 0 16px}
+.download-box{background:#09090b;border:1px solid #27272a;border-radius:12px;padding:16px;margin-bottom:20px}
+.download-title{color:#fff;font-weight:700;margin:0 0 16px}
+.download-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.download-btn{display:block;background:#2563eb;color:#fff;text-decoration:none;text-align:center;font-weight:500;padding:10px 16px;border-radius:8px;transition:.2s}
+.download-btn:hover{background:#3b82f6;transform:translateY(-1px)}
+.back-wrap{text-align:center;margin-top:8px}
+.back-btn{display:inline-block;border:0;background:#27272a;color:#d4d4d8;padding:8px 24px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:500}
+.back-btn:hover{background:#3f3f46}
+footer{background:#09090b;color:#71717a;text-align:center;padding:20px;font-size:12px;border-top:1px solid #27272a;margin-top:auto}
+footer p{margin:0}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(5px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@media(min-width:768px){
+header h1{font-size:30px}
+.cards{grid-template-columns:repeat(2,1fr)}
+.card-img-wrap{height:256px}
+.detail-box{padding:24px}
+.detail-title{font-size:26px}
+.download-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="bg-header header-top">
+<h1 onclick="showHome()">FISH MOD Z</h1>
+</div>
+
+<nav>
+<div class="container nav-inner">
+<a href="#" onclick="showHome();return false">Trang chủ</a>
+
+<a href="https://www.youtube.com/@FISHMODZ-o3j" target="_blank" rel="noopener noreferrer">
+FISH MOD Z
+</a>
+
+<a href="https://www.youtube.com/@MODSKINFF-q4f" target="_blank" rel="noopener noreferrer">
+MOD SKIN FF
+</a>
+
+<a href="#" onclick="openService();return false">
+💻 Mod Theo Yêu Cầu
+</a>
+</div>
+</nav>
+</header>
+
+<main id="home-page" class="page home">
+<div class="container">
+
+<div class="notice-wrap">
+
+<div class="notice">
+<span>🛡️</span>
+<span>Bản mod của mình được làm theo hướng an toàn, không can thiệp quá sâu vào file như 1 số bản mod khác nên không ban ID đâu nhé ae ❤️</span>
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card" onclick="openHelloKitty()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/hello-kitty.jpg" alt="MOD SKIN HELLO KITTY" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openSpiderMan()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/hq720.avif" alt="MOD SKIN SPIDER MAN" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN OB55 GÓI ĐỒ SPIDER MAN</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard3()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/anh1.avif" alt="MOD SKIN TÓC LÃNG KHÁCH VÀ TÓC SÓI" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN OB55 GÓI ĐỒ NGỦ TÓC LÃNG KHÁCH VÀ TÓC SÓI</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard4()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/anh2.avif" alt="MOD SKIN ÁO BÓNG ĐÁ QUẦN HỌC SINH" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO BÓNG ĐÁ QUẦN HỌC SINH NẠ CỎ</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard5()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/ANH%202.jpg" alt="MOD SKIN ÁO ĐÁ BÓNG QUẦN GẤU TRÚC" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG QUẦN GẤU TRÚC</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard6()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/ANH11.avif" alt="MOD SKIN ÁO ĐÁ BÓNG QUẦN NGỦ" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG QUẦN NGỦ</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard7()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/1.png" alt="MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard8()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/3.png" alt="MOD SKIN BẮN RANK KÈM HÀNH ĐỘNG AWM LV7" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN BẮN RANK KÈM HÀNH ĐỘNG AWM LV7</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard9()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/2.png" alt="MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard10()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/4.jpg" alt="MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard11()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/5.jpg" alt="MOD SKIN NẠ HẮC TINH VER 2 PHONG CÁCH TỬ CHIẾN" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN NẠ HẮC TINH VER 2 PHONG CÁCH TỬ CHIẾN</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard12()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/6.jpg" alt="MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard13()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/7.png" alt="MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard14()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/8.png" alt="MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard15()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/9.jpg" alt="MOD SKIN ÁO THỎ QUẬY TÓC LÃNG KHÁCH PHONG CÁCH IDOL TIK TOK" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO THỎ QUẬY TÓC LÃNG KHÁCH PHONG CÁCH IDOL TIK TOK</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard16()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/10.jpg" alt="MOD SKIN CAPTAIN AMERICAN" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN CAPTAIN AMERICAN</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard17()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/11.jpg" alt="MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard18()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/12.jpg" alt="MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG</h2>
+<p class="card-subtitle">Nhân Vật: ALOK Thức Tỉnh</p>
+</div>
+</div>
+
+<div class="card" onclick="openCard19()">
+<div class="card-img-wrap">
+<img src="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/n.avif" alt="MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ" class="card-image" loading="lazy">
+</div>
+<div class="card-content">
+<h2 class="card-title">MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ</h2>
+<p class="card-subtitle">Súng: M1887 Phong Xà</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</main>
+
+<div id="details"></div>
+
+<!-- TRANG DỊCH VỤ MOD -->
+<main id="service-page" class="page hidden detail">
+<div class="detail-container">
+
+<div class="detail-box service-box" style="background:#121212;border-radius:4px;padding:28px 24px;">
+
+<div style="text-align:center;">
+
+<h1 style="margin:0;color:#c7d9ee;font-size:clamp(30px,5vw,58px);font-weight:800;line-height:1.2;">
+💻 Dịch vụ Mod theo yêu cầu
+</h1>
+
+<p style="margin:0 0 44px;color:#c7c7c7;font-size:clamp(18px,2.5vw,30px);">
+Liên hệ Zalo:
+<strong style="color:#d6d6d6;">0789530059 (TRAN HOAI ANH)</strong>
+</p>
+
+</div>
+
+<h2 style="margin:0 0 28px;color:#4299e1;font-size:clamp(28px,4vw,46px);font-weight:800;">
+💲 Bảng giá
+</h2>
+
+<div class="service-prices" style="color:#f1f1f1;font-size:clamp(17px,2.2vw,29px);line-height:1.55;font-weight:500;">
+
+<p style="margin:8px 0;">
+✅ <strong>Full set theo nhân vật + hành động đi kèm tùy ý:</strong> 50.000đ - 1xx.000đ
+</p>
+
+<p style="margin:8px 0;">
+✅ <strong>Mod súng:</strong> 20.000đ - 40.000đ
+</p>
+
+<p style="margin:8px 0;">
+✅ <strong>Mod hành động:</strong> 20.000đ / hành động
+</p>
+
+<p style="margin:8px 0;">
+✅ <strong>Mod khác:</strong> trao đổi thêm
+</p>
+
+</div>
+
+<div class="back-wrap" style="margin-top:32px;">
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+</main>
+
+<footer>
+<p>© 2026 FISH MOD Z - MOD SKIN FF</p>
+</footer>
+
+<script>
+
+const data={
+
+"hello-kitty-page":[
+"MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG",
+"hello-kitty.jpg",
+"16/09/2026",
+["V1 - NẠ CỎ","f0YHMa","iSPhw2","rVSuuH5","4mQo6"],
+["V2 - NẠ MA BÚP BÊ NHAM THẠCH","nj8YB","hOOJG7","50lfpV","x8j7O"]
+],
+
+"spider-man-page":[
+"MOD SKIN OB55 GÓI ĐỒ SPIDER MAN",
+"hq720.avif",
+"17/09/2026",
+["","IjxMJ","B9kZhk8x","T7s7g9","X4gQ7"]
+],
+
+"card3-page":[
+"MOD SKIN OB55 GÓI ĐỒ NGỦ TÓC LÃNG KHÁCH VÀ TÓC SÓI",
+"anh1.avif",
+"16/09/2026",
+["V1 - Tóc Sói Công Nghệ","wN6aUVG","NWwvxFXm","Ep85E","AvybUQ"],
+["V2 - Tóc Lãng Khách Tím","jvrYN","g3nRRt6","Cu1ug","jtfcl"]
+],
+
+"card4-page":[
+"MOD SKIN ÁO BÓNG ĐÁ QUẦN HỌC SINH NẠ CỎ",
+"anh2.avif",
+"17/09/2026",
+["ÁO ĐÁ BÓNG HỒNG","osfp8","ofTwJFG","M0NJGfe","2x3JZf"],
+["ÁO ĐÁ BÓNG BỈ","2klT2eQ","MT0o0k","kaahJR","DRncw"],
+["ÁO ĐÁ BÓNG PHÁP","qwvjMnLX","1Rs4AD","xEJ4trM8","9nikdJWO"],
+["ÁO ĐÁ BÓNG ARGENTINA","xxaw8O","HnYXk","gPbzf","govwa7H"]
+],
+
+"card5-page":[
+"MOD SKIN ÁO ĐÁ BÓNG QUẦN GẤU TRÚC",
+"ANH 2.jpg",
+"17/09/2026",
+["ÁO ĐÁ BÓNG HỒNG","jvY3Oe2k","i8FJb","EpUiFYFq","6cQ8Sf"],
+["ÁO ĐÁ BÓNG BỈ","ylK6BDg","pjVdn","JB6c7F","Hgp6H0fH"],
+["ÁO ĐÁ BÓNG PHÁP","7Pwqvus","i5bdt6Vj","qej4CI8V","ggCss"],
+["ÁO ĐÁ BÓNG ARGENTINA","qn5doV76","1G4h9","DkZQLX","QBGSaR"]
+],
+
+"card6-page":[
+"MOD SKIN ÁO ĐÁ BÓNG QUẦN NGỦ",
+"ANH11.avif",
+"17/09/2026",
+["ÁO ĐÁ BÓNG HỒNG","99BkCFc","dl8PIFl","bIaB6LT8","5k6JV"],
+["ÁO ĐÁ BÓNG BỈ","tsED8Y7","fVHQs4e","LBv2qFr7","Gf6xc"],
+["ÁO ĐÁ BÓNG PHÁP","KR6Hs","QreRTO","U02Py3I","Gf6xc"],
+["ÁO ĐÁ BÓNG ARGENTINA","PwBrT","6vBuHCP","yrCRk","CQ80B"]
+],
+
+"card7-page":[
+"MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG",
+"1.png",
+"18/09/2026",
+["","JKA2N","ZRpoy89","II1U2","4aBTmU2Z"]
+],
+
+"card8-page":[
+"MOD SKIN BẮN RANK KÈM HÀNH ĐỘNG AWM LV7",
+"3.png",
+"19/09/2026",
+["","MEWte","YAKvRDV","UlejcQa","8eZm9wk"]
+],
+
+"card9-page":[
+"MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG",
+"2.png",
+"18/09/2026",
+["","WkQVPz","sE08J9g","656pss","GgWV0T"]
+],
+
+"card10-page":[
+"MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO",
+"4.jpg",
+"20/09/2026",
+["","LiXsO4R","xdPtpa8","0gARl","YPxxs4"]
+],
+
+"card11-page":[
+"MOD SKIN NẠ HẮC TINH VER 2 PHONG CÁCH TỬ CHIẾN",
+"5.jpg",
+"22/09/2026",
+["","or99Ms6","C6awwU","b7M2iyDy","quyJuzK"]
+],
+
+"card12-page":[
+"MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH",
+"6.jpg",
+"23/09/2026",
+["","EkxpwFn5","Dx5tmoOx","8yCSB0HE","7JG8b"]
+],
+
+"card13-page":[
+"MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH",
+"7.png",
+"24/09/2026",
+["","XQEnKftD","ftAnd","uE51Tle","kTYOPJT"]
+],
+
+"card14-page":[
+"MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ",
+"8.png",
+"18/09/2026",
+["","V1WasN","cgM3o","9W5Ic","8DlfYVl"]
+],
+
+"card15-page":[
+"MOD SKIN ÁO THỎ QUẬY TÓC LÃNG KHÁCH PHONG CÁCH IDOL TIK TOK",
+"9.jpg",
+"21/09/2026",
+["","iTciH1","xNkLZN12","O4CZYJq","w2Xa2"]
+],
+
+"card16-page":[
+"MOD SKIN CAPTAIN AMERICAN",
+"10.jpg",
+"23/09/2026",
+["","w5mgF9d","8ZMxMeaw","MK2nsJ","PvWse"]
+],
+
+"card17-page":[
+"MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO",
+"11.jpg",
+"24/09/2026",
+["","UL9yfVVU","VNmKaEeC","2pRrCG","nRYwZJX"]
+],
+
+"card18-page":[
+"MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG",
+"12.jpg",
+"22/09/2026",
+["","tomKB6qo","ZDK6MTc","zww3D","RhaA59b"]
+],
+
+"card19-page":[
+"MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ",
+"n.avif",
+"21/09/2026",
+["","https://link4m.net/P7znVItb","https://link4m.org/8MIfIVN","https://link4m.org/kGcPDg","https://link4m.net/kzIu5"]
+]
+
+};
+
+const base="https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/",
+pages=["home-page",...Object.keys(data)],
+link=x=>x.startsWith("http")?x:"https://link4m.org/"+x;
+
+function showPage(id){
+document.querySelectorAll("main.page").forEach(x=>x.classList.add("hidden"));
+const t=document.getElementById(id);
+if(t){
+t.classList.remove("hidden");
+window.scrollTo(0,0);
+}
+}
+
+function showHome(){
+showPage("home-page");
+}
+
+function openService(){
+showPage("service-page");
+}
+
+function makePage(id,d){
+
+let h='<main id="'+id+'" class="page hidden detail"><div class="detail-container"><div class="detail-box"><h1 class="detail-title">'+d[0]+'</h1>';
+
+h+='<div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px"><img src="'+base+d[1]+'" alt="'+d[0]+'" class="detail-img-contain" loading="eager" decoding="async"></div><p class="date">Ngày đăng: '+d[2]+'</p><div class="info"><p class="heading">🎭 Trang bị</p><p>✅ Súng: M1887 Phong Xà </p><p class="heading">📦 Phiên bản hỗ trợ</p><p>✅ FF Thường</p><p>✅ FF Max</p></div>';
+
+for(let i=3;i<d.length;i++){
+
+let v=d[i];
+
+if(v[0])
+h+='<h2 class="version-title">'+v[0]+'</h2>';
+
+h+='<div class="download-box"><p class="download-title">📱 Android</p><div class="download-grid"><a href="'+link(v[1])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="'+link(v[2])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div><div class="download-box"><p class="download-title">🍎 iOS</p><div class="download-grid"><a href="'+link(v[3])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="'+link(v[4])+'" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div>';
+
+}
+
+h+='<div class="back-wrap"><button onclick="showHome()" class="back-btn">← Quay lại trang chủ</button></div></div></div></main>';
+
+document.body.insertAdjacentHTML("beforeend",h);
+
+}
+
+Object.entries(data).forEach(([id,d])=>makePage(id,d));
+
+["HelloKitty","SpiderMan",...Array.from({length:17},(_,i)=>"Card"+(i+3))].forEach((n,i)=>window["open"+n]=()=>showPage(pages[i+1]));
+
+showHome();
+
+</script>
+</body>
+</html>
