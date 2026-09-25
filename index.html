@@ -57,18 +57,11 @@ nav a:hover{color:#fff}
 
 /* YOUTUBE */
 .youtube-box{
-    max-width:300px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:1fr;
-    gap:14px
-}
-
-@media(min-width:768px){
-    .youtube-box{
-        max-width:500px;
-        grid-template-columns:repeat(2,1fr)
-    }
+max-width:300px;
+margin:0 auto;
+display:grid;
+grid-template-columns:1fr;
+gap:14px
 }
 
 .youtube-card{
@@ -209,7 +202,10 @@ header h1{font-size:30px}
 .detail-box{padding:24px}
 .detail-title{font-size:26px}
 .download-grid{grid-template-columns:repeat(2,1fr)}
-.youtube-box{grid-template-columns:repeat(2,1fr)}
+.youtube-box{
+max-width:500px;
+grid-template-columns:repeat(2,1fr)
+}
 }
 </style>
 </head>
@@ -217,6 +213,7 @@ header h1{font-size:30px}
 <body>
 
 <header>
+
 <div class="bg-header header-top">
 <h1 onclick="showHome()">FISH MOD Z</h1>
 </div>
@@ -224,7 +221,9 @@ header h1{font-size:30px}
 <nav>
 <div class="container nav-inner">
 
-<a href="#" onclick="showHome();return false">Trang chủ</a>
+<a href="#" onclick="showHome();return false">
+Trang chủ
+</a>
 
 <a href="#" onclick="openService();return false">
 Mod Theo Yêu Cầu
@@ -234,8 +233,14 @@ Mod Theo Yêu Cầu
 Kênh YT
 </a>
 
+<!-- THẺ NHÓM MOD RIÊNG -->
+<a href="#" onclick="openModGroup();return false">
+NHÓM MOD
+</a>
+
 </div>
 </nav>
+
 </header>
 
 <main id="home-page" class="page home">
@@ -562,25 +567,6 @@ loading="lazy">
 </div>
 </a>
 
-<!-- THẺ NHÓM MOD -->
-<a href="#" onclick="openModGroup();return false" class="youtube-card">
-
-<div class="youtube-img">
-<div style="font-size:60px">👥</div>
-</div>
-
-<div class="youtube-info">
-
-<div>
-<p class="youtube-name">NHÓM MOD</p>
-<span class="youtube-follow">Zalo & Telegram</span>
-</div>
-
-<div class="youtube-icon">➜</div>
-
-</div>
-</a>
-
 </div>
 
 <div class="back-wrap" style="margin-top:24px">
@@ -593,7 +579,7 @@ loading="lazy">
 </div>
 </main>
 
-<!-- TRANG NHÓM MOD -->
+<!-- TRANG NHÓM MOD RIÊNG -->
 <main id="mod-group-page" class="page hidden detail">
 <div class="detail-container">
 
@@ -664,8 +650,8 @@ NHÓM CHAT
 </div>
 
 <div class="back-wrap" style="margin-top:24px">
-<button onclick="openYoutube()" class="back-btn">
-← Quay lại Kênh YT
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
 </button>
 </div>
 
@@ -852,6 +838,7 @@ function openYoutube(){
 showPage("youtube-page");
 }
 
+/* MỞ TRANG NHÓM MOD */
 function openModGroup(){
 showPage("mod-group-page");
 }
