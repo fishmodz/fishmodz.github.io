@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -55,6 +54,9 @@ nav a:hover{color:#fff}
 .back-wrap{text-align:center;margin-top:8px}
 .back-btn{display:inline-block;border:0;background:#27272a;color:#d4d4d8;padding:8px 24px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:500}
 .back-btn:hover{background:#3f3f46}
+.youtube-box{max-width:600px;margin:0 auto}
+.youtube-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:#18181b;border:1px solid #27272a;color:#fff;text-decoration:none;padding:15px 20px;border-radius:10px;margin-bottom:14px;font-size:16px;font-weight:600;transition:.2s}
+.youtube-btn:hover{background:#27272a;border-color:#52525b;transform:translateY(-1px)}
 footer{background:#09090b;color:#71717a;text-align:center;padding:20px;font-size:12px;border-top:1px solid #27272a;margin-top:auto}
 footer p{margin:0}
 
@@ -83,6 +85,7 @@ header h1{font-size:30px}
 
 <nav>
 <div class="container nav-inner">
+
 <a href="#" onclick="showHome();return false">Trang chủ</a>
 
 <a href="https://www.youtube.com/@FISHMODZ-o3j" target="_blank" rel="noopener noreferrer">
@@ -96,6 +99,11 @@ MOD SKIN FF
 <a href="#" onclick="openService();return false">
 💻 Mod Theo Yêu Cầu
 </a>
+
+<a href="#" onclick="openYoutube();return false">
+▶️ Kênh YT
+</a>
+
 </div>
 </nav>
 </header>
@@ -306,7 +314,6 @@ MOD SKIN FF
 
 </div>
 </div>
-</div>
 </main>
 
 <div id="details"></div>
@@ -314,47 +321,86 @@ MOD SKIN FF
 <!-- TRANG DỊCH VỤ MOD -->
 <main id="service-page" class="page hidden detail">
 <div class="detail-container">
-
 <div class="detail-box service-box" style="background:#121212;border-radius:4px;padding:28px 24px;">
 
-<div style="text-align:center;">
-
-<h1 style="margin:0;color:#c7d9ee;font-size:clamp(30px,5vw,58px);font-weight:800;line-height:1.2;">
+<div style="text-align:center">
+<h1 style="margin:0;color:#c7d9ee;font-size:clamp(30px,5vw,58px);font-weight:800;line-height:1.2">
 💻 Dịch vụ Mod theo yêu cầu
 </h1>
 
-<p style="margin:0 0 44px;color:#c7c7c7;font-size:clamp(18px,2.5vw,30px);">
+<p style="margin:0 0 44px;color:#c7c7c7;font-size:clamp(18px,2.5vw,30px)">
 Liên hệ Zalo:
-<strong style="color:#d6d6d6;">0789530059 (TRAN HOAI ANH)</strong>
+<strong style="color:#d6d6d6">0789530059 (TRAN HOAI ANH)</strong>
 </p>
-
 </div>
 
-<h2 style="margin:0 0 28px;color:#4299e1;font-size:clamp(28px,4vw,46px);font-weight:800;">
+<h2 style="margin:0 0 28px;color:#4299e1;font-size:clamp(28px,4vw,46px);font-weight:800">
 💲 Bảng giá
 </h2>
 
-<div class="service-prices" style="color:#f1f1f1;font-size:clamp(17px,2.2vw,29px);line-height:1.55;font-weight:500;">
+<div class="service-prices" style="color:#f1f1f1;font-size:clamp(17px,2.2vw,29px);line-height:1.55;font-weight:500">
 
-<p style="margin:8px 0;">
+<p style="margin:8px 0">
 ✅ <strong>Full set theo nhân vật + hành động đi kèm tùy ý:</strong> 50.000đ - 1xx.000đ
 </p>
 
-<p style="margin:8px 0;">
+<p style="margin:8px 0">
 ✅ <strong>Mod súng:</strong> 20.000đ - 40.000đ
 </p>
 
-<p style="margin:8px 0;">
+<p style="margin:8px 0">
 ✅ <strong>Mod hành động:</strong> 20.000đ / hành động
 </p>
 
-<p style="margin:8px 0;">
+<p style="margin:8px 0">
 ✅ <strong>Mod khác:</strong> trao đổi thêm
 </p>
 
 </div>
 
-<div class="back-wrap" style="margin-top:32px;">
+<div class="back-wrap" style="margin-top:32px">
+<button onclick="showHome()" class="back-btn">
+← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+</main>
+
+<!-- TRANG KÊNH YOUTUBE -->
+<main id="youtube-page" class="page hidden detail">
+<div class="detail-container">
+
+<div class="detail-box" style="max-width:650px;margin:auto;text-align:center">
+
+<h1 class="detail-title" style="font-size:30px;margin-bottom:28px">
+▶️ Kênh YouTube
+</h1>
+
+<p style="color:#a1a1aa;font-size:14px;margin-bottom:24px">
+Theo dõi 2 kênh YouTube của FISH MOD Z
+</p>
+
+<div class="youtube-box">
+
+<a href="https://www.youtube.com/@FISHMODZ-o3j"
+target="_blank"
+rel="noopener noreferrer"
+class="youtube-btn">
+▶️ FISH MOD Z
+</a>
+
+<a href="https://www.youtube.com/@MODSKINFF-q4f"
+target="_blank"
+rel="noopener noreferrer"
+class="youtube-btn">
+▶️ MOD SKIN FF
+</a>
+
+</div>
+
+<div class="back-wrap" style="margin-top:24px">
 <button onclick="showHome()" class="back-btn">
 ← Quay lại trang chủ
 </button>
@@ -537,6 +583,10 @@ showPage("home-page");
 
 function openService(){
 showPage("service-page");
+}
+
+function openYoutube(){
+showPage("youtube-page");
 }
 
 function makePage(id,d){
