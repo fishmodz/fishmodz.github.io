@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
@@ -35,7 +35,7 @@
 </div>
 <h2 style="margin:0 0 28px;color:#4299e1;font-size:clamp(28px,4vw,46px);font-weight:800">💲 Bảng giá</h2>
 <div class="service-prices" style="color:#f1f1f1;font-size:clamp(17px,2.2vw,29px);line-height:1.55;font-weight:500">
-<p style="margin:8px 0">✅ <strong>Full set theo nhân vật + hành động đi kèm tùy ý:</strong> 50.000đ - 1xx.000đ</p>
+<p style="margin:8px 0">✅ <strong>Full set theo nhân vật:</strong> 50.000đ - 1xx.000đ</p>
 <p style="margin:8px 0">✅ <strong>Mod súng:</strong> 20.000đ - 40.000đ</p>
 <p style="margin:8px 0">✅ <strong>Mod hành động:</strong> 20.000đ / hành động</p>
 <p style="margin:8px 0">✅ <strong>Mod khác:</strong> trao đổi thêm</p>
@@ -100,9 +100,16 @@ function showPage(id){document.querySelectorAll("main.page").forEach(x=>x.classL
 function showHome(){showPage("home-page")}function openService(){showPage("service-page")}function openYoutube(){showPage("youtube-page")}function openModGroup(){showPage("mod-group-page")}
 
 const link=x=>x.startsWith("http")?x:"https://link4m.org/"+x;
+
 function makePage(id,d){
-let h=`<main id="${id}" class="page hidden detail"><div class="detail-container"><div class="detail-box"><h1 class="detail-title">${d[0]}</h1><div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px"><img src="${base+d[1]}" alt="${d[0]}" class="detail-img-contain" loading="eager" decoding="async"></div><p class="date">Ngày đăng: ${d[2]}</p><div class="info"><p class="heading">🎭 Trang bị</p><p>✅ Súng: M1887 Phong Xà </p><p class="heading">📦 Phiên bản hỗ trợ</p><p>✅ FF Thường</p><p>✅ FF Max</p></div>`;
-for(let i=3;i<d.length;i++){let v=d[i];if(v[0])h+=`<h2 class="version-title">${v[0]}</h2>`;h+=`<div class="download-box"><p class="download-title">📱 Android</p><div class="download-grid"><a href="${link(v[1])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="${link(v[2])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div><div class="download-box"><p class="download-title">🍎 iOS</p><div class="download-grid"><a href="${link(v[3])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="${link(v[4])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div>`}
+let h=`<main id="${id}" class="page hidden detail"><div class="detail-container"><div class="detail-box"><h1 class="detail-title">${d[0]}</h1><div style="width:100%;background:#18181b;border:1px solid #27272a;border-radius:12px;overflow:hidden;margin-bottom:16px"><img src="${base+d[1]}" alt="${d[0]}" class="detail-img-contain" loading="eager" decoding="async"></div><p class="date">Ngày đăng: ${d[2]}</p><div class="info"><p class="heading">🎭 Trang bị</p><p>✅ ${id=="card19-page"?"Súng: M1887 Phong Xà":"Nhân Vật: ALOK Thức Tỉnh"}</p><p class="heading">📦 Phiên bản hỗ trợ</p><p>✅ FF Thường</p><p>✅ FF Max</p></div>`;
+
+for(let i=3;i<d.length;i++){
+let v=d[i];
+if(v[0])h+=`<h2 class="version-title">${v[0]}</h2>`;
+h+=`<div class="download-box"><p class="download-title">📱 Android</p><div class="download-grid"><a href="${link(v[1])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="${link(v[2])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div><div class="download-box"><p class="download-title">🍎 iOS</p><div class="download-grid"><a href="${link(v[3])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Thường</a><a href="${link(v[4])}" target="_blank" rel="noopener noreferrer" class="download-btn">FF Max</a></div></div>`
+}
+
 document.body.insertAdjacentHTML("beforeend",h+`<div class="back-wrap"><button onclick="showHome()" class="back-btn">← Quay lại trang chủ</button></div></div></div></main>`)
 }
 
@@ -112,12 +119,14 @@ const yt=[
 ["https://www.youtube.com/@FISHMODZ-o3j","https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/6174683630752436943.jpg","FISH MOD Z"],
 ["https://www.youtube.com/@MODSKINFF-q4f","https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/6174683630752436944.jpg","MOD SKIN FF"]
 ];
+
 document.getElementById("youtube").innerHTML=yt.map(x=>`<a href="${x[0]}" target="_blank" rel="noopener noreferrer" class="youtube-card"><div class="youtube-img"><img src="${x[1]}" alt="${x[2]}" loading="lazy"></div><div class="youtube-info"><div><p class="youtube-name">${x[2]}</p><span class="youtube-follow">Kênh YouTube</span></div><div class="youtube-icon">▶</div></div></a>`).join("");
 
 const groups=[
 ["https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/zalo-icon-4635.png","Zalo","https://zalo.me/g/be8hvjdow8cmzd9jshv2","https://zalo.me/g/l0fkcmwntqe2ymfjabna"],
 ["https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/telegram.webp","Telegram","https://t.me/modskinff01","https://t.me/chatmodskinff"]
 ];
+
 document.getElementById("groups").innerHTML=groups.map(x=>`<div class="group-section"><h2 class="group-title"><img src="${x[0]}" alt="${x[1]}">${x[1].toUpperCase()}</h2><div class="group-buttons"><a href="${x[2]}" target="_blank" rel="noopener noreferrer" class="group-btn">NHÓM MOD</a><a href="${x[3]}" target="_blank" rel="noopener noreferrer" class="group-btn">NHÓM CHAT</a></div></div>`).join("");
 
 showHome();
