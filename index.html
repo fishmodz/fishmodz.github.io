@@ -162,7 +162,17 @@ padding:18px
 margin:0 0 14px;
 color:#fff;
 font-size:19px;
-font-weight:700
+font-weight:700;
+display:flex;
+align-items:center;
+gap:10px
+}
+
+.group-title img{
+width:28px;
+height:28px;
+object-fit:contain;
+display:block
 }
 
 .group-buttons{
@@ -233,7 +243,6 @@ Mod Theo Yêu Cầu
 Kênh YT
 </a>
 
-<!-- THẺ NHÓM MOD RIÊNG -->
 <a href="#" onclick="openModGroup();return false">
 NHÓM MOD
 </a>
@@ -599,7 +608,8 @@ Tham gia nhóm Zalo & Telegram
 <div class="group-section">
 
 <h2 class="group-title">
-➤ ZALO
+<img src="https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/zalo-icon-4635.png" alt="Zalo">
+ZALO
 </h2>
 
 <div class="group-buttons">
@@ -625,7 +635,8 @@ NHÓM CHAT
 <div class="group-section">
 
 <h2 class="group-title">
-➤ TELEGRAM
+<img src="https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/telegram.webp" alt="Telegram">
+TELEGRAM
 </h2>
 
 <div class="group-buttons">
@@ -838,7 +849,6 @@ function openYoutube(){
 showPage("youtube-page");
 }
 
-/* MỞ TRANG NHÓM MOD */
 function openModGroup(){
 showPage("mod-group-page");
 }
