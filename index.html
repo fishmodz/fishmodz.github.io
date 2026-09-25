@@ -66,7 +66,7 @@ nav a:hover{color:#fff}
 
 @media(min-width:768px){
     .youtube-box{
-        max-width:700px;
+        max-width:500px;
         grid-template-columns:repeat(2,1fr)
     }
 }
@@ -89,7 +89,6 @@ transform:translateY(-4px);
 box-shadow:0 8px 25px rgba(0,0,0,.4)
 }
 
-/* KHUNG ẢNH YOUTUBE HÌNH VUÔNG, KHÔNG CẮT ẢNH */
 .youtube-img{
 width:100%;
 aspect-ratio:1/1;
@@ -149,6 +148,50 @@ transition:.2s
 .youtube-card:hover .youtube-icon{
 background:#dc2626;
 color:#fff
+}
+
+/* NHÓM MOD */
+.group-box{
+max-width:500px;
+margin:0 auto;
+display:grid;
+gap:16px
+}
+
+.group-section{
+background:#09090b;
+border:1px solid #27272a;
+border-radius:14px;
+padding:18px
+}
+
+.group-title{
+margin:0 0 14px;
+color:#fff;
+font-size:19px;
+font-weight:700
+}
+
+.group-buttons{
+display:grid;
+gap:10px
+}
+
+.group-btn{
+display:block;
+background:#2563eb;
+color:#fff;
+text-decoration:none;
+text-align:center;
+font-weight:600;
+padding:11px 16px;
+border-radius:8px;
+transition:.2s
+}
+
+.group-btn:hover{
+background:#3b82f6;
+transform:translateY(-1px)
 }
 
 footer{background:#09090b;color:#71717a;text-align:center;padding:20px;font-size:12px;border-top:1px solid #27272a;margin-top:auto}
@@ -519,11 +562,110 @@ loading="lazy">
 </div>
 </a>
 
+<!-- THẺ NHÓM MOD -->
+<a href="#" onclick="openModGroup();return false" class="youtube-card">
+
+<div class="youtube-img">
+<div style="font-size:60px">👥</div>
+</div>
+
+<div class="youtube-info">
+
+<div>
+<p class="youtube-name">NHÓM MOD</p>
+<span class="youtube-follow">Zalo & Telegram</span>
+</div>
+
+<div class="youtube-icon">➜</div>
+
+</div>
+</a>
+
 </div>
 
 <div class="back-wrap" style="margin-top:24px">
 <button onclick="showHome()" class="back-btn">
 ← Quay lại trang chủ
+</button>
+</div>
+
+</div>
+</div>
+</main>
+
+<!-- TRANG NHÓM MOD -->
+<main id="mod-group-page" class="page hidden detail">
+<div class="detail-container">
+
+<div class="detail-box" style="max-width:850px;margin:auto;text-align:center">
+
+<h1 class="detail-title" style="font-size:30px;margin-bottom:10px">
+Nhóm Mod
+</h1>
+
+<p style="color:#a1a1aa;font-size:14px;margin:0 0 24px">
+Tham gia nhóm Zalo & Telegram
+</p>
+
+<div class="group-box">
+
+<!-- ZALO -->
+<div class="group-section">
+
+<h2 class="group-title">
+➤ ZALO
+</h2>
+
+<div class="group-buttons">
+
+<a href="https://zalo.me/g/be8hvjdow8cmzd9jshv2"
+target="_blank"
+rel="noopener noreferrer"
+class="group-btn">
+NHÓM MOD
+</a>
+
+<a href="https://zalo.me/g/l0fkcmwntqe2ymfjabna"
+target="_blank"
+rel="noopener noreferrer"
+class="group-btn">
+NHÓM CHAT
+</a>
+
+</div>
+</div>
+
+<!-- TELEGRAM -->
+<div class="group-section">
+
+<h2 class="group-title">
+➤ TELEGRAM
+</h2>
+
+<div class="group-buttons">
+
+<a href="https://t.me/kingoffreefiremodskin"
+target="_blank"
+rel="noopener noreferrer"
+class="group-btn">
+NHÓM MOD
+</a>
+
+<a href="https://t.me/modskinfftheoyeucau"
+target="_blank"
+rel="noopener noreferrer"
+class="group-btn">
+NHÓM CHAT
+</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="back-wrap" style="margin-top:24px">
+<button onclick="openYoutube()" class="back-btn">
+← Quay lại Kênh YT
 </button>
 </div>
 
@@ -708,6 +850,10 @@ showPage("service-page");
 
 function openYoutube(){
 showPage("youtube-page");
+}
+
+function openModGroup(){
+showPage("mod-group-page");
 }
 
 function makePage(id,d){
