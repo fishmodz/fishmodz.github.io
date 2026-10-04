@@ -842,9 +842,9 @@ document.getElementById("cards").innerHTML = E.map(([id,d]) => {
         id === "card19-page"
             ? "Súng: M1887 Phong Xà"
             : id === "card33-page"
-                ? "Bật Hoạt Ảnh Trong Trận"
+                ? "Mặc Định"
                 : id === "card34-page"
-                    ? "Nhân Vật: ALOK Thức Tỉnh"
+                    ? "Nhân Vật : ALOK Thức Tỉnh + IGNIS"
                     : "Nhân Vật: ALOK Thức Tỉnh";
 
     return `
@@ -985,7 +985,6 @@ function makePage(id,d){
                 </h2>
             `;
         }
-
 
         h += `
             <div class="download-box">
