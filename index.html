@@ -1,5 +1,5 @@
+```html
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
@@ -584,8 +584,8 @@ footer p {
     }
 }
 </style>
-
 </head>
+
 
 <body>
 
@@ -595,33 +595,34 @@ footer p {
 
 <header>
 
-<div class="bg-header header-top">
-    <h1 onclick="showHome()">FISH MOD Z</h1>
-</div>
-
-<nav>
-    <div class="container nav-inner">
-
-        <a href="#" onclick="showHome(); return false">
-            Trang chủ
-        </a>
-
-        <a href="#" onclick="openService(); return false">
-            Mod Theo Yêu Cầu
-        </a>
-
-        <a href="#" onclick="openYoutube(); return false">
-            Kênh YT
-        </a>
-
-        <a href="#" onclick="openModGroup(); return false">
-            NHÓM MOD
-        </a>
-
+    <div class="bg-header header-top">
+        <h1 onclick="showHome()">FISH MOD Z</h1>
     </div>
-</nav>
+
+    <nav>
+        <div class="container nav-inner">
+
+            <a href="#" onclick="showHome(); return false">
+                Trang chủ
+            </a>
+
+            <a href="#" onclick="openService(); return false">
+                Mod Theo Yêu Cầu
+            </a>
+
+            <a href="#" onclick="openYoutube(); return false">
+                Kênh YT
+            </a>
+
+            <a href="#" onclick="openModGroup(); return false">
+                NHÓM MOD
+            </a>
+
+        </div>
+    </nav>
 
 </header>
+
 
 <!-- =========================================================
      TRANG CHỦ
@@ -629,31 +630,32 @@ footer p {
 
 <main id="home-page" class="page home">
 
-<div class="container">
+    <div class="container">
 
-    <div class="notice-wrap">
+        <div class="notice-wrap">
 
-        <div class="notice">
-            🛡️
+            <div class="notice">
+                🛡️
 
-            <span>
-                Bản mod của mình được làm theo hướng an toàn,
-                không can thiệp quá sâu vào file như 1 số bản mod khác
-                nên không ban ID đâu nhé ae ❤️
-            </span>
+                <span>
+                    Bản mod của mình được làm theo hướng an toàn,
+                    không can thiệp quá sâu vào file như 1 số bản mod khác
+                    nên không ban ID đâu nhé ae ❤️
+                </span>
+
+            </div>
 
         </div>
 
+
+        <!-- CARD MOD TỰ ĐỘNG HIỂN THỊ Ở ĐÂY -->
+
+        <div class="cards" id="cards"></div>
+
     </div>
 
-
-    <!-- CARD MOD TỰ ĐỘNG HIỂN THỊ Ở ĐÂY -->
-
-    <div class="cards" id="cards"></div>
-
-</div>
-
 </main>
+
 
 <!-- =========================================================
      TRANG MOD THEO YÊU CẦU
@@ -661,113 +663,114 @@ footer p {
 
 <main id="service-page" class="page hidden detail">
 
-<div class="detail-container">
-
-    <div
-        class="detail-box service-box"
-        style="
-            background:#121212;
-            border-radius:4px;
-            padding:28px 24px;
-        "
-    >
-
-        <div style="text-align:center">
-
-            <h1
-                style="
-                    margin:0;
-                    color:#c7d9ee;
-                    font-size:clamp(30px,5vw,58px);
-                    font-weight:800;
-                    line-height:1.2;
-                "
-            >
-                Mod theo yêu cầu
-            </h1>
-
-            <p
-                style="
-                    margin:0 0 44px;
-                    color:#c7c7c7;
-                    font-size:clamp(18px,2.5vw,30px);
-                "
-            >
-                Liên hệ Zalo:
-                <strong style="color:#d6d6d6">
-                    0789530059 (TRAN HOAI ANH)
-                </strong>
-            </p>
-
-        </div>
-
-
-        <h2
-            style="
-                margin:0 0 28px;
-                color:#4299e1;
-                font-size:clamp(28px,4vw,46px);
-                font-weight:800;
-            "
-        >
-            💲 Bảng giá
-        </h2>
-
+    <div class="detail-container">
 
         <div
-            class="service-prices"
+            class="detail-box service-box"
             style="
-                color:#f1f1f1;
-                font-size:clamp(17px,2.2vw,29px);
-                line-height:1.55;
-                font-weight:500;
+                background:#121212;
+                border-radius:4px;
+                padding:28px 24px;
             "
         >
 
-            <p style="margin:8px 0">
-                ✅ <strong>Full set nhân vật:</strong>
-                40.000đ - 1xx.000đ
-            </p>
+            <div style="text-align:center">
 
-            <p style="margin:8px 0">
-                ✅ <strong>Mod súng:</strong>
-                25.000đ - 40.000đ
-            </p>
+                <h1
+                    style="
+                        margin:0;
+                        color:#c7d9ee;
+                        font-size:clamp(30px,5vw,58px);
+                        font-weight:800;
+                        line-height:1.2;
+                    "
+                >
+                    Mod theo yêu cầu
+                </h1>
 
-            <p style="margin:8px 0">
-                ✅ <strong>Mod hành động:</strong>
-                25.000đ / hành động
-            </p>
+                <p
+                    style="
+                        margin:0 0 44px;
+                        color:#c7c7c7;
+                        font-size:clamp(18px,2.5vw,30px);
+                    "
+                >
+                    Liên hệ Zalo:
+                    <strong style="color:#d6d6d6">
+                        0789530059 (TRAN HOAI ANH)
+                    </strong>
+                </p>
 
-            <p style="margin:8px 0">
-                ✅ <strong>Mod đồ lẻ:</strong>
-                25.000đ - 40.000đ
-            </p>
-
-            <p style="margin:8px 0">
-                ✅ <strong>Mod khác:</strong>
-                trao đổi thêm
-            </p>
-
-        </div>
+            </div>
 
 
-        <div class="back-wrap" style="margin-top:32px">
-
-            <button
-                onclick="showHome()"
-                class="back-btn"
+            <h2
+                style="
+                    margin:0 0 28px;
+                    color:#4299e1;
+                    font-size:clamp(28px,4vw,46px);
+                    font-weight:800;
+                "
             >
-                ← Quay lại trang chủ
-            </button>
+                💲 Bảng giá
+            </h2>
+
+
+            <div
+                class="service-prices"
+                style="
+                    color:#f1f1f1;
+                    font-size:clamp(17px,2.2vw,29px);
+                    line-height:1.55;
+                    font-weight:500;
+                "
+            >
+
+                <p style="margin:8px 0">
+                    ✅ <strong>Full set nhân vật:</strong>
+                    40.000đ - 1xx.000đ
+                </p>
+
+                <p style="margin:8px 0">
+                    ✅ <strong>Mod súng:</strong>
+                    25.000đ - 40.000đ
+                </p>
+
+                <p style="margin:8px 0">
+                    ✅ <strong>Mod hành động:</strong>
+                    25.000đ / hành động
+                </p>
+
+                <p style="margin:8px 0">
+                    ✅ <strong>Mod đồ lẻ:</strong>
+                    25.000đ - 40.000đ
+                </p>
+
+                <p style="margin:8px 0">
+                    ✅ <strong>Mod khác:</strong>
+                    trao đổi thêm
+                </p>
+
+            </div>
+
+
+            <div class="back-wrap" style="margin-top:32px">
+
+                <button
+                    onclick="showHome()"
+                    class="back-btn"
+                >
+                    ← Quay lại trang chủ
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
-
 </main>
+
 
 <!-- =========================================================
      TRANG YOUTUBE
@@ -775,61 +778,62 @@ footer p {
 
 <main id="youtube-page" class="page hidden detail">
 
-<div class="detail-container">
-
-    <div
-        class="detail-box"
-        style="
-            max-width:850px;
-            margin:auto;
-            text-align:center;
-        "
-    >
-
-        <h1
-            class="detail-title"
-            style="
-                font-size:30px;
-                margin-bottom:10px;
-            "
-        >
-            Youtube
-        </h1>
-
-        <p
-            style="
-                color:#a1a1aa;
-                font-size:14px;
-                margin:0 0 24px;
-            "
-        >
-            Theo dõi 3 kênh YouTube của mình nha ae
-        </p>
+    <div class="detail-container">
 
         <div
-            class="youtube-box"
-            id="youtube"
-        ></div>
-
-        <div
-            class="back-wrap"
-            style="margin-top:24px"
+            class="detail-box"
+            style="
+                max-width:850px;
+                margin:auto;
+                text-align:center;
+            "
         >
 
-            <button
-                onclick="showHome()"
-                class="back-btn"
+            <h1
+                class="detail-title"
+                style="
+                    font-size:30px;
+                    margin-bottom:10px;
+                "
             >
-                ← Quay lại trang chủ
-            </button>
+                Youtube
+            </h1>
+
+            <p
+                style="
+                    color:#a1a1aa;
+                    font-size:14px;
+                    margin:0 0 24px;
+                "
+            >
+                Theo dõi 3 kênh YouTube của mình nha ae
+            </p>
+
+            <div
+                class="youtube-box"
+                id="youtube"
+            ></div>
+
+            <div
+                class="back-wrap"
+                style="margin-top:24px"
+            >
+
+                <button
+                    onclick="showHome()"
+                    class="back-btn"
+                >
+                    ← Quay lại trang chủ
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
-
 </main>
+
 
 <!-- =========================================================
      TRANG NHÓM MOD
@@ -837,33 +841,2515 @@ footer p {
 
 <main id="mod-group-page" class="page hidden detail">
 
-<div class="detail-container">
+    <div class="detail-container">
 
-    <div
-        class="detail-box"
-        style="
-            max-width:850px;
-            margin:auto;
-            text-align:center;
-        "
-    >
-
-        <h1
-            class="detail-title"
+        <div
+            class="detail-box"
             style="
-                font-size:30px;
-                margin-bottom:10px;
+                max-width:850px;
+                margin:auto;
+                text-align:center;
             "
         >
-            Nhóm Mod
-        </h1>
 
-        <p
-            style="
-                color:#a1a1aa;
-                font-size:14px;
-                margin:0 0 24px;
-            "
+            <h1
+                class="detail-title"
+                style="
+                    font-size:30px;
+                    margin-bottom:10px;
+                "
+            >
+                Nhóm Mod
+            </h1>
+
+            <p
+                style="
+                    color:#a1a1aa;
+                    font-size:14px;
+                    margin:0 0 24px;
+                "
+            >
+                Tham gia nhóm Zalo & Telegram
+            </p>
+
+            <div
+                class="group-box"
+                id="groups"
+            ></div>
+
+            <div
+                class="back-wrap"
+                style="margin-top:24px"
+            >
+
+                <button
+                    onclick="showHome()"
+                    class="back-btn"
+                >
+                    ← Quay lại trang chủ
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <p>
+        © 2026 FISH MOD Z - MOD SKIN FF
+    </p>
+
+</footer>
+
+
+<script>
+
+/* ============================================================
+   PHẦN A — CẤU HÌNH CHUNG
+   ============================================================ */
+
+/*
+    Nếu ảnh chỉ ghi tên file:
+        "hello-kitty.jpg"
+
+    Website sẽ tự lấy:
+        base + "hello-kitty.jpg"
+
+    Nếu ảnh là URL đầy đủ:
+        "https://..."
+
+    Website sẽ dùng trực tiếp URL đó.
+*/
+
+const BASE_IMAGE_URL =
+    "https://raw.githubusercontent.com/hoaianhark-cell/fishmodz/main/";
+
+
+/* ============================================================
+   PHẦN B — DỮ LIỆU MOD
+   ============================================================
+
+   ⭐ ĐÂY LÀ PHẦN QUAN TRỌNG NHẤT ⭐
+
+   Mỗi bài mod nằm trong một object riêng.
+
+   Muốn sửa:
+
+   title       = Tiêu đề
+   image       = Ảnh
+   date        = Ngày đăng
+   equipment   = 🎭 Trang bị
+   versions    = Các phiên bản / link tải
+
+   ------------------------------------------------------------
+
+   ĐẶC BIỆT PHẦN TRANG BỊ:
+
+   equipment: [
+       "Nhân vật: ALOK Thức Tỉnh",
+       "Áo: Áo bóng đá",
+       "Quần: Quần Gojo",
+       "Nạ: Nạ Cỏ"
+   ]
+
+   Muốn thêm trang bị chỉ cần thêm dòng:
+
+       "Mũ: Mũ Tiểu Tiên",
+
+   ============================================================ */
+
+
+const MODS = {
+
+
+/* ============================================================
+   CARD 36
+============================================================ */
+
+"card36-page": {
+
+    title:
+        "MOD SKIN SÚNG M1887 PHONG XÀ THÀNH AWM HOẢ BĂNG",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5913.PNG",
+
+    date:
+        "04/10/2026",
+
+
+    /* 🎭 TRANG BỊ - SỬA TẠI ĐÂY */
+
+    equipment: [
+        "Súng: M1887 Phong Xà"
+    ],
+
+
+    /* 📦 PHIÊN BẢN */
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+
+    /* 📱 LINK TẢI */
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal: "",
+
+            androidMax:
+                "https://link4m.org/b9VCcYHs",
+
+            iosNormal:
+                "https://link4m.org/kh3JF6f",
+
+            iosMax:
+                "https://link4m.net/GpbPub7"
+        },
+
+        {
+            name: "",
+
+            androidNormal: "",
+            androidMax:
+                "https://link4m.org/Zlp3ywrw",
+
+            iosNormal: "",
+            iosMax: ""
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 35
+============================================================ */
+
+"card35-page": {
+
+    title:
+        "MOD SKIN PHONG CÁCH FREE STYLE QUẦN ĐƯỜNG PHỐ NẠ NOEL",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5864.JPG.jpeg",
+
+    date:
+        "04/10/2026",
+
+    equipment: [
+        "Nhân vật: ALOK Thức Tỉnh"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/mAah5",
+
+            androidMax:
+                "https://link4m.net/sekYH",
+
+            iosNormal:
+                "https://link4m.net/8Pgjq8",
+
+            iosMax:
+                "https://link4m.org/9JU6lATJ"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 34
+============================================================ */
+
+"card34-page": {
+
+    title:
+        "MOD SKIN ÁO THỎ NEON KÈM NẤM ĐẤM CHIDORI",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5917.JPG.jpeg",
+
+    date:
+        "04/10/2026",
+
+    equipment: [
+        "Nhân vật: ALOK Thức Tỉnh",
+        "Nhân vật: IGNIS"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name:
+                "➤ IGNIS FULL HIỆU ỨNG",
+
+            androidNormal:
+                "https://link4m.org/FXBOwV1j",
+
+            androidMax:
+                "https://link4m.net/VdBqckp8",
+
+            iosNormal:
+                "https://link4m.net/bnHeUIN",
+
+            iosMax:
+                "https://link4m.org/ynP1Iu"
+        },
+
+        {
+            name:
+                "➤ ALOK KHÔNG HIỆU ỨNG",
+
+            androidNormal:
+                "https://link4m.net/78q0UG",
+
+            androidMax:
+                "https://link4m.net/miXhCZ",
+
+            iosNormal:
+                "https://link4m.org/O0C62wG",
+
+            iosMax:
+                "https://link4m.net/LzumSm"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 33
+============================================================ */
+
+"card33-page": {
+
+    title:
+        "MOD FULL HOẠT ẢNH MỘNG CẢNH FIX LAG",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5861.PNG",
+
+    date:
+        "03/10/2026",
+
+    equipment: [
+        "Bật Hoạt Ảnh Trong Trận"
+    ],
+
+    supportedVersions: [
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "Mặc Định",
+
+            androidNormal: "",
+
+            androidMax:
+                "https://link4m.org/P7kycLN7",
+
+            iosNormal: "",
+
+            iosMax:
+                "https://link4m.org/TRFL2"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 32
+============================================================ */
+
+"card32-page": {
+
+    title:
+        "MOD SKIN PHONG CÁCH FREE STYLE ÁO DA ĐỎ MŨ ĐƯỜNG PHỐ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5866.JPG.jpeg",
+
+    date:
+        "03/10/2026",
+
+    equipment: [
+        "Nhân vật: ALOK Thức Tỉnh"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/spQD4",
+
+            androidMax:
+                "https://link4m.net/dwpYL1yH",
+
+            iosNormal:
+                "https://link4m.net/aL19A",
+
+            iosMax:
+                "https://link4m.org/9zAJy"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 31
+============================================================ */
+
+"card31-page": {
+
+    title:
+        "MOD SKIN QUÁI NHÂN HƯ KHÔNG TÓC LÃNG KHÁCH NẠ CỎ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5778.JPG.jpeg",
+
+    date:
+        "01/10/2026",
+
+    equipment: [
+        "Nhân vật: ALOK Thức Tỉnh",
+        "Tóc: Lãng Khách",
+        "Nạ: Nạ Cỏ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/juzSvrfR",
+
+            androidMax:
+                "https://link4m.org/5f2bevtK",
+
+            iosNormal:
+                "https://link4m.net/7r2NS",
+
+            iosMax:
+                "https://link4m.org/jkjVj4BX"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 30
+============================================================ */
+
+"card30-page": {
+
+    title:
+        "MOD SKIN TÓC BÍCH VÀNG ÁO COLUMBIA",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5763.JPG.jpeg",
+
+    date:
+        "02/10/2026",
+
+    equipment: [
+        "Tóc: Bích Vàng",
+        "Áo: Columbia"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/g7Jdn",
+
+            androidMax:
+                "https://link4m.org/u0u1i",
+
+            iosNormal:
+                "https://link4m.org/gVtrriaK",
+
+            iosMax:
+                "https://link4m.org/OkIkO"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 29
+============================================================ */
+
+"card29-page": {
+
+    title:
+        "MOD SKIN ÁO MEGUMI QUẦN STREET XANH",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5678.JPG.jpeg",
+
+    date:
+        "01/10/2026",
+
+    equipment: [
+        "Áo: Megumi",
+        "Quần: Street xanh"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/HryGowR",
+
+            androidMax:
+                "https://link4m.net/L2DuO",
+
+            iosNormal:
+                "https://link4m.net/cetTfpR",
+
+            iosMax:
+                "https://link4m.net/xZsd2zd"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 28
+============================================================ */
+
+"card28-page": {
+
+    title:
+        "MOD SKIN ÁO THÍCH KHÁCH NẠ NOEL TÓC LÃNG KHÁCH",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5673.PNG",
+
+    date:
+        "30/09/2026",
+
+    equipment: [
+        "Áo: Thích Khách",
+        "Nạ: Noel",
+        "Tóc: Lãng Khách"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/FvuVjZe",
+
+            androidMax:
+                "https://link4m.org/3Sh1F3z",
+
+            iosNormal:
+                "https://link4m.org/httdVG",
+
+            iosMax:
+                "https://link4m.org/Us15cR"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 27
+============================================================ */
+
+"card27-page": {
+
+    title:
+        "MOD SKIN MŨ TIỂU TIÊN ÁO ĐÁ BÓNG BỈ QUẦN NGỦ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5677.JPG.jpeg",
+
+    date:
+        "30/09/2026",
+
+    equipment: [
+        "Mũ: Tiểu Tiên",
+        "Áo: Đá bóng Bỉ",
+        "Quần: Quần ngủ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/P2M0AdGc",
+
+            androidMax:
+                "https://link4m.net/GGVPfn",
+
+            iosNormal:
+                "https://link4m.org/ed5Ysrf",
+
+            iosMax:
+                "https://link4m.net/4fyna9a"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 26
+============================================================ */
+
+"card26-page": {
+
+    title:
+        "OD SKIN QUÁI NHÂN HƯ KHÔNG TÓC BÍCH VÀNG",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5654.PNG",
+
+    date:
+        "28/09/2026",
+
+    equipment: [
+        "Nhân vật: ALOK Thức Tỉnh",
+        "Tóc: Bích Vàng"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/DcxyItuT",
+
+            androidMax:
+                "https://link4m.org/x3XjM",
+
+            iosNormal:
+                "https://link4m.net/7x5oFL",
+
+            iosMax:
+                "https://link4m.net/n3GSI8"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 25
+============================================================ */
+
+"card25-page": {
+
+    title:
+        "MOD SKIN TÓC ƯNG TỘC PHONG CÁCH BOY PHỐ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5661.PNG",
+
+    date:
+        "28/09/2026",
+
+    equipment: [
+        "Tóc: Ưng Tộc",
+        "Phong cách: Boy Phố"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.net/OJOZGT",
+
+            androidMax:
+                "https://link4m.net/3gwP38",
+
+            iosNormal:
+                "https://link4m.org/yzpZgDi",
+
+            iosMax:
+                "https://link4m.net/Z1R1vmz"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 23
+============================================================ */
+
+"card23-page": {
+
+    title:
+        "MOD SKIN MŨ TVC MÙA 2 ÁO ĐÁ BÓNG MEXICO",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5604.PNG",
+
+    date:
+        "27/09/2026",
+
+    equipment: [
+        "Mũ: TVC Mùa 2",
+        "Áo: Đá bóng Mexico"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/v03uO",
+
+            androidMax:
+                "https://link4m.org/hdhrbhw5",
+
+            iosNormal:
+                "https://link4m.org/GjkJunl",
+
+            iosMax:
+                "https://link4m.net/44nKPd"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 24
+============================================================ */
+
+"card24-page": {
+
+    title:
+        "MOD SKIN QUÁI NHÂN HƯ KHÔNG MŨ TVC 2",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5605.PNG",
+
+    date:
+        "27/09/2026",
+
+    equipment: [
+        "Nhân vật: Quái Nhân Hư Không",
+        "Mũ: TVC 2"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/jaLKm",
+
+            androidMax:
+                "https://link4m.net/mXc9oY",
+
+            iosNormal:
+                "https://link4m.net/h9X8XiW",
+
+            iosMax:
+                "https://link4m.org/dZLZZ"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 20
+============================================================ */
+
+"card20-page": {
+
+    title:
+        "MOD SKIN MŨ TVC MÙA 2 ÁO CƯỚP BIỂN PHONG CÁCH DÂN BẮN KAI SƠ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5527.JPG.jpeg",
+
+    date:
+        "26/09/2026",
+
+    equipment: [
+        "Mũ: TVC Mùa 2",
+        "Áo: Cướp biển",
+        "Phong cách: Dân bắn Kai Sơ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/gKaXDgx",
+
+            androidMax:
+                "https://link4m.org/nxyHjH",
+
+            iosNormal:
+                "https://link4m.net/dJhOD3",
+
+            iosMax:
+                "https://link4m.org/nDpOH"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 21
+============================================================ */
+
+"card21-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO NẠ CỎ DÂN BẮN KAI SƠ",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5525.JPG.jpeg",
+
+    date:
+        "26/09/2026",
+
+    equipment: [
+        "Áo: Đá bóng Bỉ",
+        "Quần: Gojo",
+        "Nạ: Nạ Cỏ",
+        "Phong cách: Dân bắn Kai Sơ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "",
+
+            androidNormal:
+                "https://link4m.org/9gYeuG",
+
+            androidMax:
+                "https://link4m.org/gqREnuD",
+
+            iosNormal:
+                "https://link4m.net/Hn1fJqOn",
+
+            iosMax:
+                "https://link4m.org/4R3Kr"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 17
+============================================================ */
+
+"card17-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG BRAZIL QUẦN GOJO",
+
+    image:
+        "11.jpg",
+
+    date:
+        "24/09/2026",
+
+    equipment: [
+        "Áo: Đá bóng Brazil",
+        "Quần: Gojo"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "UL9yfVVU",
+            androidMax: "VNmKaEeC",
+            iosNormal: "2pRrCG",
+            iosMax: "nRYwZJX"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 13
+============================================================ */
+
+"card13-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG PHÁP QUẦN VỆ BINH",
+
+    image:
+        "7.png",
+
+    date:
+        "24/09/2026",
+
+    equipment: [
+        "Áo: Đá bóng Pháp",
+        "Quần: Vệ Binh"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "XQEnKftD",
+            androidMax: "ftAnd",
+            iosNormal: "uE51Tle",
+            iosMax: "kTYOPJT"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 16
+============================================================ */
+
+"card16-page": {
+
+    title:
+        "MOD SKIN CAPTAIN AMERICAN",
+
+    image:
+        "10.jpg",
+
+    date:
+        "23/09/2026",
+
+    equipment: [
+        "Nhân vật: Captain American"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "w5mgF9d",
+            androidMax: "8ZMxMeaw",
+            iosNormal: "MK2nsJ",
+            iosMax: "PvWse"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 12
+============================================================ */
+
+"card12-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG BỈ NẠ MA BÚP BÊ 7 ĐÁ TÓC LÃNG KHÁCH",
+
+    image:
+        "6.jpg",
+
+    date:
+        "23/09/2026",
+
+    equipment: [
+        "Áo: Đá bóng Bỉ",
+        "Nạ: Ma Búp Bê 7 Đá",
+        "Tóc: Lãng Khách"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "EkxpwFn5",
+            androidMax: "Dx5tmoOx",
+            iosNormal: "8yCSB0HE",
+            iosMax: "7JG8b"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 22
+============================================================ */
+
+"card22-page": {
+
+    title:
+        "MOD SKIN FULL SET QUÁI NHÂN HƯ KHÔNG",
+
+    image:
+        "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/Picsart_26-09-21_20-56-23-220.jpg",
+
+    date:
+        "22/09/2026",
+
+    equipment: [
+        "Full set Quái Nhân Hư Không"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal:
+                "https://link4m.net/EkxpwFn5",
+
+            androidMax:
+                "https://link4m.net/Dx5tmoOx",
+
+            iosNormal:
+                "https://link4m.org/8yCSB0HE",
+
+            iosMax:
+                "https://link4m.net/7JG8b"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 11
+============================================================ */
+
+"card11-page": {
+
+    title:
+        "MOD SKIN NẠ HẮC TINH VER 2 PHONG CÁCH TỬ CHIẾN",
+
+    image:
+        "5.jpg",
+
+    date:
+        "22/09/2026",
+
+    equipment: [
+        "Nạ Hắc Tinh Ver 2",
+        "Phong cách Tử Chiến"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "or99Ms6",
+            androidMax: "C6awwU",
+            iosNormal: "b7M2iyDy",
+            iosMax: "quyJuzK"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 15
+============================================================ */
+
+"card15-page": {
+
+    title:
+        "MOD SKIN ÁO THỎ QUẬY TÓC LÃNG KHÁCH PHONG CÁCH IDOL TIK TOK",
+
+    image:
+        "9.jpg",
+
+    date:
+        "21/09/2026",
+
+    equipment: [
+        "Áo: Thỏ Quậy",
+        "Tóc: Lãng Khách",
+        "Phong cách: Idol TikTok"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "iTciH1",
+            androidMax: "xNkLZN12",
+            iosNormal: "O4CZYJq",
+            iosMax: "w2Xa2"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 19
+============================================================ */
+
+"card19-page": {
+
+    title:
+        "MOD SKIN SÚNG M1887 THÁNH PHỒNG TRÊN PHONG XÀ",
+
+    image:
+        "n.avif",
+
+    date:
+        "21/09/2026",
+
+    equipment: [
+        "Súng: M1887 Phong Xà"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal:
+                "https://link4m.net/P7znVItb",
+
+            androidMax:
+                "https://link4m.org/8MIfIVN",
+
+            iosNormal:
+                "https://link4m.org/kGcPDg",
+
+            iosMax:
+                "https://link4m.net/kzIu5"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 10
+============================================================ */
+
+"card10-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG BỈ QUẦN GOJO",
+
+    image:
+        "4.jpg",
+
+    date:
+        "20/09/2026",
+
+    equipment: [
+        "Áo: Đá bóng Bỉ",
+        "Quần: Gojo"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "LiXsO4R",
+            androidMax: "xdPtpa8",
+            iosNormal: "0gARl",
+            iosMax: "YPxxs4"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 8
+============================================================ */
+
+"card8-page": {
+
+    title:
+        "MOD SKIN BẮN RANK KÈM HÀNH ĐỘNG AWM LV7",
+
+    image:
+        "3.png",
+
+    date:
+        "19/09/2026",
+
+    equipment: [
+        "Súng: AWM LV7",
+        "Hành động: Kèm hành động"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "MEWte",
+            androidMax: "YAKvRDV",
+            iosNormal: "UlejcQa",
+            iosMax: "8eZm9wk"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 7
+============================================================ */
+
+"card7-page": {
+
+    title:
+        "MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH TRẮNG",
+
+    image:
+        "1.png",
+
+    date:
+        "18/09/2026",
+
+    equipment: [
+        "Mũ: Tiểu Tiên",
+        "Áo: Áo ngủ",
+        "Quần: Cánh trắng"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "JKA2N",
+            androidMax: "ZRpoy89",
+            iosNormal: "II1U2",
+            iosMax: "4aBTmU2Z"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 9
+============================================================ */
+
+"card9-page": {
+
+    title:
+        "MOD SKIN MŨ TIỂU TIÊN ÁO NGỦ QUẦN CÁNH VÀNG",
+
+    image:
+        "2.png",
+
+    date:
+        "18/09/2026",
+
+    equipment: [
+        "Mũ: Tiểu Tiên",
+        "Áo: Áo ngủ",
+        "Quần: Cánh vàng"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "WkQVPz",
+            androidMax: "sE08J9g",
+            iosNormal: "656pss",
+            iosMax: "GgWV0T"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 14
+============================================================ */
+
+"card14-page": {
+
+    title:
+        "MOD SKIN MŨ TIỂU TIÊN ÁO VỆ BINH NẠ CỎ",
+
+    image:
+        "8.png",
+
+    date:
+        "18/09/2026",
+
+    equipment: [
+        "Mũ: Tiểu Tiên",
+        "Áo: Vệ Binh",
+        "Nạ: Nạ Cỏ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "V1WasN",
+            androidMax: "cgM3o",
+            iosNormal: "9W5Ic",
+            iosMax: "8DlfYVl"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   SPIDER MAN
+============================================================ */
+
+"spider-man-page": {
+
+    title:
+        "MOD SKIN OB55 GÓI ĐỒ SPIDER MAN",
+
+    image:
+        "hq720.avif",
+
+    date:
+        "17/09/2026",
+
+    equipment: [
+        "Gói đồ Spider Man"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+        {
+            name: "",
+            androidNormal: "IjxMJ",
+            androidMax: "B9kZhk8x",
+            iosNormal: "T7s7g9",
+            iosMax: "X4gQ7"
+        }
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 4 — NHIỀU PHIÊN BẢN
+============================================================ */
+
+"card4-page": {
+
+    title:
+        "MOD SKIN ÁO BÓNG ĐÁ QUẦN HỌC SINH NẠ CỎ",
+
+    image:
+        "anh2.avif",
+
+    date:
+        "17/09/2026",
+
+    equipment: [
+        "Áo bóng đá",
+        "Quần học sinh",
+        "Nạ Cỏ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "ÁO ĐÁ BÓNG HỒNG",
+            androidNormal: "osfp8",
+            androidMax: "ofTwJFG",
+            iosNormal: "M0NJGfe",
+            iosMax: "2x3JZf"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG BỈ",
+            androidNormal: "2klT2eQ",
+            androidMax: "MT0o0k",
+            iosNormal: "kaahJR",
+            iosMax: "DRncw"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG PHÁP",
+            androidNormal: "qwvjMnLX",
+            androidMax: "1Rs4AD",
+            iosNormal: "xEJ4trM8",
+            iosMax: "9nikdJWO"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG ARGENTINA",
+            androidNormal: "xxaw8O",
+            androidMax: "HnYXk",
+            iosNormal: "gPbzf",
+            iosMax: "govwa7H"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 5
+============================================================ */
+
+"card5-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG QUẦN GẤU TRÚC",
+
+    image:
+        "ANH 2.jpg",
+
+    date:
+        "17/09/2026",
+
+    equipment: [
+        "Áo đá bóng",
+        "Quần Gấu Trúc"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "ÁO ĐÁ BÓNG HỒNG",
+            androidNormal: "jvY3Oe2k",
+            androidMax: "i8FJb",
+            iosNormal: "EpUiFYFq",
+            iosMax: "6cQ8Sf"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG BỈ",
+            androidNormal: "ylK6BDg",
+            androidMax: "pjVdn",
+            iosNormal: "JB6c7F",
+            iosMax: "Hgp6H0fH"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG PHÁP",
+            androidNormal: "7Pwqvus",
+            androidMax: "i5bdt6Vj",
+            iosNormal: "qej4CI8V",
+            iosMax: "ggCss"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG ARGENTINA",
+            androidNormal: "qn5doV76",
+            androidMax: "1G4h9",
+            iosNormal: "DkZQLX",
+            iosMax: "QBGSaR"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 6
+============================================================ */
+
+"card6-page": {
+
+    title:
+        "MOD SKIN ÁO ĐÁ BÓNG QUẦN NGỦ",
+
+    image:
+        "ANH11.avif",
+
+    date:
+        "17/09/2026",
+
+    equipment: [
+        "Áo đá bóng",
+        "Quần ngủ"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name: "ÁO ĐÁ BÓNG HỒNG",
+            androidNormal: "99BkCFc",
+            androidMax: "dl8PIFl",
+            iosNormal: "bIaB6LT8",
+            iosMax: "5k6JV"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG BỈ",
+            androidNormal: "tsED8Y7",
+            androidMax: "fVHQs4e",
+            iosNormal: "LBv2qFr7",
+            iosMax: "Gf6xc"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG PHÁP",
+            androidNormal: "KR6Hs",
+            androidMax: "QreRTO",
+            iosNormal: "U02Py3I",
+            iosMax: "Gf6xc"
+        },
+
+        {
+            name: "ÁO ĐÁ BÓNG ARGENTINA",
+            androidNormal: "PwBrT",
+            androidMax: "6vBuHCP",
+            iosNormal: "yrCRk",
+            iosMax: "CQ80B"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   HELLO KITTY
+============================================================ */
+
+"hello-kitty-page": {
+
+    title:
+        "MOD SKIN OB55 GÓI ĐỒ NGỦ HELLO KITTY MÀU HỒNG",
+
+    image:
+        "hello-kitty.jpg",
+
+    date:
+        "16/09/2026",
+
+    equipment: [
+        "Gói đồ ngủ Hello Kitty màu hồng"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name:
+                "V1 - NẠ CỎ",
+
+            androidNormal: "f0YHMa",
+            androidMax: "iSPhw2",
+            iosNormal: "rVSuuH5",
+            iosMax: "4mQo6"
+        },
+
+        {
+            name:
+                "V2 - NẠ MA BÚP BÊ NHAM THẠCH",
+
+            androidNormal: "nj8YB",
+            androidMax: "hOOJG7",
+            iosNormal: "50lfpV",
+            iosMax: "x8j7O"
+        }
+
+    ]
+
+},
+
+
+/* ============================================================
+   CARD 3
+============================================================ */
+
+"card3-page": {
+
+    title:
+        "MOD SKIN OB55 GÓI ĐỒ NGỦ TÓC LÃNG KHÁCH VÀ TÓC SÓI",
+
+    image:
+        "anh1.avif",
+
+    date:
+        "16/09/2026",
+
+    equipment: [
+        "Gói đồ ngủ",
+        "Tóc Lãng Khách",
+        "Tóc Sói"
+    ],
+
+    supportedVersions: [
+        "FF Thường",
+        "FF Max"
+    ],
+
+    versions: [
+
+        {
+            name:
+                "V1 - Tóc Sói Công Nghệ",
+
+            androidNormal: "wN6aUVG",
+            androidMax: "NWwvxFXm",
+            iosNormal: "Ep85E",
+            iosMax: "AvybUQ"
+        },
+
+        {
+            name:
+                "V2 - Tóc Lãng Khách Tím",
+
+            androidNormal: "jvrYN",
+            androidMax: "g3nRRt6",
+            iosNormal: "Cu1ug",
+            iosMax: "jtfcl"
+        }
+
+    ]
+
+}
+
+};
+
+
+/* ============================================================
+   PHẦN C — HÀM XỬ LÝ LINK
+============================================================ */
+
+/*
+    Nếu link bắt đầu bằng http/https
+    => dùng trực tiếp.
+
+    Nếu chỉ là mã link
+    => giữ nguyên để tương thích với dữ liệu cũ.
+*/
+
+function getLink(link) {
+
+    if (!link) {
+        return "#";
+    }
+
+    return link;
+}
+
+
+/* ============================================================
+   PHẦN D — LẤY ĐƯỜNG DẪN ẢNH
+============================================================ */
+
+function getImage(image) {
+
+    if (!image) {
+        return "";
+    }
+
+    if (
+        image.startsWith("http://") ||
+        image.startsWith("https://")
+    ) {
+        return image;
+    }
+
+    return BASE_IMAGE_URL + image;
+}
+
+
+/* ============================================================
+   PHẦN E — ĐẶT TÊN HÀM MỞ TRANG
+============================================================ */
+
+function getFunctionName(id) {
+
+    if (id === "hello-kitty-page") {
+        return "HelloKitty";
+    }
+
+    if (id === "spider-man-page") {
+        return "SpiderMan";
+    }
+
+    const number = id.match(/\d+/);
+
+    return number
+        ? "Card" + number[0]
+        : id.replace(/[^a-zA-Z0-9]/g, "");
+}
+
+
+/* ============================================================
+   PHẦN F — SẮP XẾP BÀI THEO NGÀY
+============================================================ */
+
+const MOD_ENTRIES = Object.entries(MODS);
+
+MOD_ENTRIES.sort((a, b) => {
+
+    const dateA =
+        new Date(
+            a[1].date.split("/").reverse().join("-")
+        );
+
+    const dateB =
+        new Date(
+            b[1].date.split("/").reverse().join("-")
+        );
+
+    return dateB - dateA;
+});
+
+
+/* ============================================================
+   PHẦN G — CHUYỂN TRANG
+============================================================ */
+
+function showPage(id) {
+
+    document
+        .querySelectorAll("main.page")
+        .forEach(page => {
+            page.classList.add("hidden");
+        });
+
+    const page = document.getElementById(id);
+
+    if (page) {
+        page.classList.remove("hidden");
+    }
+
+    window.scrollTo(0, 0);
+}
+
+
+function showHome() {
+    showPage("home-page");
+}
+
+
+function openService() {
+    showPage("service-page");
+}
+
+
+function openYoutube() {
+    showPage("youtube-page");
+}
+
+
+function openModGroup() {
+    showPage("mod-group-page");
+}
+
+
+/* ============================================================
+   PHẦN H — TẠO HÀM MỞ TỪNG CARD
+============================================================ */
+
+MOD_ENTRIES.forEach(([id]) => {
+
+    const functionName = getFunctionName(id);
+
+    window["open" + functionName] = function () {
+        showPage(id);
+    };
+
+});
+
+
+/* ============================================================
+   PHẦN I — TẠO CARD TRANG CHỦ
+============================================================ */
+
+const cardsContainer =
+    document.getElementById("cards");
+
+
+cardsContainer.innerHTML =
+    MOD_ENTRIES.map(([id, mod]) => {
+
+        const image =
+            getImage(mod.image);
+
+        let subtitle =
+            "Nhân vật: ALOK Thức Tỉnh";
+
+
+        if (id === "card36-page") {
+            subtitle =
+                "Skin Súng: M1887 Phong Xà";
+        }
+
+        else if (id === "card19-page") {
+            subtitle =
+                "Súng: M1887 Phong Xà";
+        }
+
+        else if (id === "card33-page") {
+            subtitle =
+                "Mặc Định";
+        }
+
+        else if (id === "card34-page") {
+            subtitle =
+                "Nhân vật: ALOK Thức Tỉnh + IGNIS";
+        }
+
+
+        return `
+
+            <div
+                class="card"
+                onclick="open${getFunctionName(id)}()"
+            >
+
+                <div class="card-img-wrap">
+
+                    <img
+                        src="${image}"
+                        class="card-image"
+                        loading="lazy"
+                        alt="${mod.title}"
+                    >
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <h2 class="card-title">
+                        ${mod.title}
+                    </h2>
+
+                    <p class="card-subtitle">
+                        ${subtitle}
+                    </p>
+
+                </div>
+
+            </div>
+
+        `;
+
+    }).join("");
+
+
+/* ============================================================
+   PHẦN J — TẠO TRANG CHI TIẾT
+============================================================ */
+
+function createModPage(id, mod) {
+
+    const image =
+        getImage(mod.image);
+
+
+    let html = `
+
+        <main
+            id="${id}"
+            class="page hidden detail"
         >
-            Tham gia nhóm Zalo & Telegram
-        </p>
+
+            <div class="detail-container">
+
+                <div class="detail-box">
+
+
+                    <!-- TIÊU ĐỀ -->
+
+                    <h1 class="detail-title">
+                        ${mod.title}
+                    </h1>
+
+
+                    <!-- ẢNH -->
+
+                    <div
+                        style="
+                            width:100%;
+                            background:#18181b;
+                            border:1px solid #27272a;
+                            border-radius:12px;
+                            overflow:hidden;
+                            margin-bottom:16px;
+                        "
+                    >
+
+                        <img
+                            src="${image}"
+                            class="detail-img-contain"
+                            loading="eager"
+                            decoding="async"
+                            alt="${mod.title}"
+                        >
+
+                    </div>
+
+
+                    <!-- NGÀY -->
+
+                    <p class="date">
+                        Ngày đăng: ${mod.date}
+                    </p>
+
+
+                    <!-- =====================================
+                         TRANG BỊ
+                    ====================================== -->
+
+                    <div class="info">
+
+                        <p class="heading">
+                            🎭 Trang bị
+                        </p>
+
+                        <ul class="equipment-list">
+    `;
+
+
+    /* ---------------------------------------------------------
+       HIỂN THỊ TRANG BỊ
+    --------------------------------------------------------- */
+
+    if (
+        mod.equipment &&
+        mod.equipment.length
+    ) {
+
+        mod.equipment.forEach(item => {
+
+            html += `
+                <li>
+                    ${item}
+                </li>
+            `;
+
+        });
+
+    }
+
+
+    html += `
+
+                        </ul>
+
+
+                        <!-- PHIÊN BẢN HỖ TRỢ -->
+
+                        <p class="heading">
+                            📦 Phiên bản hỗ trợ
+                        </p>
+
+    `;
+
+
+    if (
+        mod.supportedVersions &&
+        mod.supportedVersions.length
+    ) {
+
+        mod.supportedVersions.forEach(version => {
+
+            html += `
+                <p>
+                    ✅ ${version}
+                </p>
+            `;
+
+        });
+
+    }
+
+
+    html += `
+
+                    </div>
+
+    `;
+
+
+    /* =========================================================
+       TẠO CÁC PHIÊN BẢN DOWNLOAD
+    ========================================================= */
+
+    mod.versions.forEach(version => {
+
+        if (version.name) {
+
+            html += `
+                <h2 class="version-title">
+                    ${version.name}
+                </h2>
+            `;
+
+        }
+
+
+        /* -----------------------------------------------------
+           ANDROID
+        ----------------------------------------------------- */
+
+        html += `
+
+            <div class="download-box">
+
+                <p class="download-title">
+                    📱 Android
+                </p>
+
+                <div class="download-grid">
+
+        `;
+
+
+        if (version.androidNormal) {
+
+            html += `
+
+                <a
+                    href="${getLink(version.androidNormal)}"
+                    target="_blank"
+                    rel="noopener"
+                    class="download-btn"
+                >
+                    FF Thường
+                </a>
+
+            `;
+
+        }
+
+
+        if (version.androidMax) {
+
+            html += `
+
+                <a
+                    href="${getLink(version.androidMax)}"
+                    target="_blank"
+                    rel="noopener"
+                    class="download-btn"
+                >
+                    FF Max
+                </a>
+
+            `;
+
+        }
+
+
+        html += `
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        /* -----------------------------------------------------
+           IOS
+        ----------------------------------------------------- */
+
+        html += `
+
+            <div class="download-box">
+
+                <p class="download-title">
+                    🍎 iOS
+                </p>
+
+                <div class="download-grid">
+
+        `;
+
+
+        if (version.iosNormal) {
+
+            html += `
+
+                <a
+                    href="${getLink(version.iosNormal)}"
+                    target="_blank"
+                    rel="noopener"
+                    class="download-btn"
+                >
+                    FF Thường
+                </a>
+
+            `;
+
+        }
+
+
+        if (version.iosMax) {
+
+            html += `
+
+                <a
+                    href="${getLink(version.iosMax)}"
+                    target="_blank"
+                    rel="noopener"
+                    class="download-btn"
+                >
+                    FF Max
+                </a>
+
+            `;
+
+        }
+
+
+        html += `
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+
+    /* =========================================================
+       NÚT QUAY LẠI
+    ========================================================= */
+
+    html += `
+
+                    <div class="back-wrap">
+
+                        <button
+                            onclick="showHome()"
+                            class="back-btn"
+                        >
+                            ← Quay lại trang chủ
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </main>
+
+    `;
+
+
+    document.body.insertAdjacentHTML(
+        "beforeend",
+        html
+    );
+}
+
+
+/* ============================================================
+   PHẦN K — TẠO TẤT CẢ TRANG MOD
+============================================================ */
+
+MOD_ENTRIES.forEach(([id, mod]) => {
+
+    createModPage(id, mod);
+
+});
+
+
+/* ============================================================
+   PHẦN L — YOUTUBE
+============================================================
+
+   ⭐ MUỐN ĐỔI KÊNH YOUTUBE THÌ SỬA Ở ĐÂY
+============================================================ */
+
+const YOUTUBE_CHANNELS = [
+
+    {
+        name: "FISH MOD Z",
+
+        url:
+            "https://www.youtube.com/@FISHMODZ-o3j",
+
+        image:
+            "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/6174683630752436943.jpg"
+    },
+
+    {
+        name: "MOD SKIN FF",
+
+        url:
+            "https://www.youtube.com/@MODSKINFF-w5z",
+
+        image:
+            "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/6174683630752436944.jpg"
+    },
+
+    {
+        name: "KING OF FF",
+
+        url:
+            "https://www.youtube.com/@kingoffreefire-i9m",
+
+        image:
+            "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/IMG_5668.JPEG"
+    }
+
+];
+
+
+document.getElementById("youtube").innerHTML =
+
+    YOUTUBE_CHANNELS.map(channel => `
+
+        <a
+            href="${channel.url}"
+            target="_blank"
+            rel="noopener"
+            class="youtube-card"
+        >
+
+            <div class="youtube-img">
+
+                <img
+                    src="${channel.image}"
+                    loading="lazy"
+                    alt="${channel.name}"
+                >
+
+            </div>
+
+
+            <div class="youtube-info">
+
+                <div>
+
+                    <p class="youtube-name">
+                        ${channel.name}
+                    </p>
+
+                    <span class="youtube-follow">
+                        Kênh YouTube
+                    </span>
+
+                </div>
+
+
+                <div class="youtube-icon">
+                    ▶
+                </div>
+
+            </div>
+
+        </a>
+
+    `).join("");
+
+
+/* ============================================================
+   PHẦN M — NHÓM ZALO / TELEGRAM
+============================================================
+
+   ⭐ MUỐN ĐỔI LINK NHÓM THÌ SỬA Ở ĐÂY
+============================================================ */
+
+const GROUPS = [
+
+    {
+        icon:
+            "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/zalo-icon-4635.png",
+
+        name:
+            "Zalo",
+
+        mod:
+            "https://zalo.me/g/be8hvjdow8cmzd9jshv2",
+
+        chat:
+            "https://zalo.me/g/l0fkcmwntqe2ymfjabna"
+    },
+
+
+    {
+        icon:
+            "https://raw.githubusercontent.com/fishmodz/fishmodz.github.io/main/telegram.webp",
+
+        name:
+            "Telegram",
+
+        mod:
+            "https://t.me/modskinff01",
+
+        chat:
+            "https://t.me/chatmodskinff"
+    }
+
+];
+
+
+document.getElementById("groups").innerHTML =
+
+    GROUPS.map(group => `
+
+        <div class="group-section">
+
+            <h2 class="group-title">
+
+                <img
+                    src="${group.icon}"
+                    alt="${group.name}"
+                >
+
+                ${group.name.toUpperCase()}
+
+            </h2>
+
+
+            <div class="group-buttons">
+
+                <a
+                    href="${group.mod}"
+                    target="_blank"
+                    rel="noopener"
+                    class="group-btn"
+                >
+                    NHÓM MOD
+                </a>
+
+
+                <a
+                    href="${group.chat}"
+                    target="_blank"
+                    rel="noopener"
+                    class="group-btn"
+                >
+                    NHÓM CHAT
+                </a>
+
+            </div>
+
+        </div>
+
+    `).join("");
+
+
+/* ============================================================
+   PHẦN N — MỞ TRANG CHỦ KHI WEBSITE LOAD
+============================================================ */
+
+showHome();
+
+</script>
+
+</body>
+</html>
+```
